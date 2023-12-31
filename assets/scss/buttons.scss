@@ -1,0 +1,21 @@
+.btn {
+    padding: .25em 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+
+    transition: 200ms;
+}
+
+.mea-btn {
+    border: 1px solid $primary;
+    color: $primary;
+}
+
+.mea-btn:hover,
+.mea-btn:focus {
+    color: white;
+    background-color: $primary;
+}
+

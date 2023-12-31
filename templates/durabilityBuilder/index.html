@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+
+{% block headContent %}
+
+    <title>Durability Builder</title>
+
+{#    <style>#}
+{#        .bg-container {#}
+{#            background-image: url("{% static 'src/img/tri-transition-fade.png' %}");#}
+{#            background-size: auto;#}
+{#            background-position-y: top;#}
+{#            background-position-x: left;#}
+{#            background-repeat: no-repeat;#}
+{##}
+{#            height: 1094px;#}
+{#        }#}
+{#    </style>#}
+
+
+
+{% endblock %}
+
+
+
+{% block content %}
+
+    <div class="bg-container">
+        <div class="container py-4 px-3 mx-sm-0 mx-md-auto">
+            <div class="row">
+                <h1>Welcome To The Durability Builder!</h1>
+            </div>
+            <div class="row mt-5">
+                <h4>The activities in this program will help to maintain or regain the natural range of movement in key areas of your body. This increased mobility will help to make you a better athlete and will lessen the likelihood of an injury while training or racing.</h4>
+            </div>
+            <div class="row mt-5">
+                <h4>To help us tailor the program to your individual needs, please answer the following short series of questions. If you're not sure of an answer, go with your best guess.</h4>
+            </div>
+            <div class="row mt-5">
+                <h4>We are excited to work with you!</h4>
+            </div>
+            <div class="row mt-5" style="width: 100px;">
+                <button class="btn mea-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
