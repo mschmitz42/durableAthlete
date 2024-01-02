@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'dist/main.css' %}">
-    <script defer src="{% static 'dist/main.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <script defer src="{% static 'main.js' %}"></script>
 
     {% block headContent %}
 
@@ -19,12 +19,12 @@
 
     <nav class="nav nav-top">
         <div class="logo-container">
-            <a href="https://www.multisportenduranceacademy.com/"><img class="logo-img" src="{% static 'dist/img/MEA-logo1.png' %}" alt="MEA Logo"></a>
+            <a href="https://www.multisportenduranceacademy.com/"><img class="logo-img" src="{% static 'img/MEA-logo1.png' %}" alt="MEA Logo"></a>
         </div>
 
         <ul class="nav-list">
             {% if user.is_authenticated %}
-                <li><button href="#"><img class="menu-icon" src="{% static 'dist/img/menu-icon.svg' %}" alt="Menu Icon"></button></li>
+                <li><button href="#"><img class="menu-icon" src="{% static 'img/menu-icon.svg' %}" alt="Menu Icon"></button></li>
             {% else %}
                 <li><button class="btn mea-btn" href="#">Login</button></li>
             {%  endif %}
@@ -41,3 +41,4 @@
 
 </body>
 </html>
+

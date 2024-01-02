@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure--n15i&hg%7&(l1t^@ni_uth_yq+((q+o1e7!(42siy(1_!gz$u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'mschmitz42.pythonanywhere.com',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -116,9 +119,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = 'static/'
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'dist'),
 ]
 
 # Default primary key field type

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "parcel build assets/js/main.js --dist-dir static/dist"
+    "build": "parcel build assets/js/main.js --dist-dir dist"
   },
   "staticFiles": {
     "staticPath": "assets/img",
