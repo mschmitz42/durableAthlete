@@ -21,3 +21,4 @@ urlpatterns = [
     path("", include("durabilityBuilder.urls")),
     path('admin/', admin.site.urls),
 ]
+
