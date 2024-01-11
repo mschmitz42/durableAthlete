@@ -7,7 +7,7 @@ section {
 }
 
 .section-bg {
-  background-color: lighten($primary, 46);
+  background-color: lighten($secondary, 20);
 }
 
 .section-title {
@@ -29,7 +29,7 @@ section {
     position: relative;
     font-size: 32px;
     font-weight: 700;
-    color: $secondary-dark;
+    color: $black;
   }
 
   p::after {
@@ -97,12 +97,17 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+#about {
+    border-bottom: 1px solid $primary-light;
+}
+
 .about {
 
   h3 {
     font-weight: 700;
     font-size: 34px;
-    color: $secondary-dark;
+    color: $black;
   }
 
   h4 {
@@ -119,8 +124,8 @@ section {
   }
 
   p {
-    font-size: 15px;
-    color: lighten($default, 25);
+    font-size: 18px;
+    color: lighten($default, 15);
   }
 
   @media (max-width: 991px) {
@@ -139,6 +144,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services {
+  border-bottom: 1px solid $primary-light;
+}
+
 .services {
 
   .icon-box {
@@ -594,9 +603,15 @@ section {
 
 }
 
+
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+
+#contact {
+    border-bottom: 1px solid $primary-light;
+}
+
 .contact {
 
   .info {
@@ -632,8 +647,8 @@ section {
     p {
       padding: 0 0 10px 60px;
       margin-bottom: 20px;
-      font-size: 14px;
-      color: lighten($secondary, 20);
+      font-size: 18px;
+      color: $black;
     }
 
     .email {
