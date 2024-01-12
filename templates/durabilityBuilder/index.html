@@ -56,7 +56,7 @@
           <h1 class="text-center">The Durability Builder Program</h1>
           <h2>A training plan that prioritizes your durability!</h2>
           <div>
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="{% url 'durabilityBuilder:get_started' %}" class="btn-get-started scrollto">Get Started</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
@@ -169,7 +169,7 @@
               </ul>
 
               <div class="text-center mt-auto">
-                <a href="#" class="buy-btn">Get Started</a>
+                <a href="{% url 'durabilityBuilder:get_started' %}" class="buy-btn">Get Started</a>
               </div>
 
             </div>
@@ -194,7 +194,7 @@
               </ul>
 
               <div class="text-center mt-auto">
-                <a href="#" class="buy-btn">Get Started</a>
+                <a href="{% url 'durabilityBuilder:get_started' %}" class="buy-btn">Get Started</a>
               </div>
 
             </div>
@@ -217,7 +217,7 @@
               </ul>
 
               <div class="text-center mt-auto">
-                <a href="#" class="buy-btn">Get Started</a>
+                <a href="{% url 'durabilityBuilder:get_started' %}" class="buy-btn">Get Started</a>
               </div>
 
             </div>
@@ -266,32 +266,33 @@
 {#          </div>#}
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+                <form role="form" method="post" class="php-email-form" action="#">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="name">Your Name</label>
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group col-md-6 mt-3 mt-md-0">
+                          <label for="name">Your Email</label>
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control" name="subject" id="subject" value="I'm interested in the Durability Builder Plan" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="name">Message</label>
+                        <textarea class="form-control" name="message" rows="10" required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
           </div>
 
         </div>

@@ -142,6 +142,85 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Confirmation
+--------------------------------------------------------------*/
+
+.confirmation {
+
+  h3 {
+    font-weight: 700;
+    font-size: 34px;
+    color: $black;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: $secondary;
+  }
+
+  i {
+    font-size: 48px;
+    margin-top: 15px;
+    color: $primary-light;
+  }
+
+  p {
+    font-size: 18px;
+    color: lighten($default, 15);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+    margin-top: 20px;
+
+    li +li {
+      margin-top: 20px;
+    }
+  }
+
+  a {
+    color: $primary;
+  }
+
+  a:hover  {
+    color: $primary-light;
+  }
+
+  .confirmation-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 6px;
+    color: $primary;
+    transition: none;
+    font-size: 16px;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 1px solid $primary;
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .about-img img {
+      max-width: 70%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .about-img img {
+      max-width: 90%;
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 #services {

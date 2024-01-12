@@ -1,0 +1,41 @@
+{% extends 'base_nonav.html' %}
+
+
+{% load static %}
+
+
+{% block headContent %}
+
+
+{% endblock %}
+
+
+
+{% block content %}
+
+     <main id="main">
+
+        <!-- ======= Confirmation Section ======= -->
+        <section id="confirmation" class="confirmation" style="margin-top: 220px;">
+          <div class="container">
+
+            <div class="row justify-content-between">
+              <div class="col-lg-6 pt-5 pt-lg-0">
+                <h3>Your message has been sent.</h3>
+                <p>
+                    Where would you like to go next?
+                </p>
+                <ul>
+                    <li><a href="{% url 'durabilityBuilder:get_started' %}" class="confirmation-btn">Get Started With Durability Builder</a></li>
+                    <li><a href="{% url 'durabilityBuilder:home' %}" class="confirmation-btn">Durability Builder Home</a></li>
+                    <li><a href="https://www.multisportenduranceacademy.com/" class="confirmation-btn">Multisport Endurance Academy Home</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </section><!-- End Confirmation Section -->
+
+      </main>
+
+{%  endblock %}
