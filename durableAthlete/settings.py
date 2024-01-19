@@ -74,16 +74,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'durableAthlete.wsgi.application'
 
-DEFAULT_FROM_EMAIL = "webmaster@derek-haff-fitness.com"
-EMAIL_HOST = "smtppro.zoho.com"
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "webmaster@derek-haff-fitness.com"
-EMAIL_HOST_PASSWORD = "Ayf68Fgr_7CxTcaTzGMktiCL7sjFrgk"
-EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "mikeschmitz42@gmail.com"
+EMAIL_HOST = "smtp.mandrillapp.com"
+EMAIL_PORT = 465
+EMAIL_HOST_USER = "mikeschmitz42@gmail.com"
+EMAIL_HOST_PASSWORD = "md-2y2fQ4mKdE_YmN7WMhH1Yg"
+EMAIL_USE_SSL = True
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases

@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  color: #eb5d1e;
+  color: #138035;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ef7f4d;
+  color: #1aac47;
   text-decoration: none;
 }
 
@@ -604,13 +604,13 @@ section {
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
-.portfolio #portfolio-flters {
+.portfolio #portfolio-filters {
   padding: 0;
   margin: 0 0 35px 0;
   list-style: none;
   text-align: center;
 }
-.portfolio #portfolio-flters li {
+.portfolio #portfolio-filters li {
   cursor: pointer;
   margin: 0 15px 15px 0;
   display: inline-block;
@@ -622,10 +622,10 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-filters li:hover, .portfolio #portfolio-filters li.filter-active {
   color: #138035;
 }
-.portfolio #portfolio-flters li:last-child {
+.portfolio #portfolio-filters li:last-child {
   margin-right: 0;
 }
 .portfolio .portfolio-wrap {
