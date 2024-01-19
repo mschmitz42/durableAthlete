@@ -20,7 +20,7 @@ def durabilityBuilder_index(request):
             try:
                 send_mail("Message From Durability Builder Website",
                           message,
-                          "mikeschmitz42@gmail.com",
+                          "mike@durabilitybuilder.com",
                           ["mikeschmitz42@icloud.com"])
             except BadHeaderError:
                 return HttpResponse("Invalid Header Found")
