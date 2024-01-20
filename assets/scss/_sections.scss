@@ -10,40 +10,56 @@ section {
   background-color: lighten($secondary, 20);
 }
 
+.section-bg-grn {
+  background-color: lighten($primary-light, 60);
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 
   h2 {
-    font-size: 24px;
-    font-weight: 700;
-    padding-bottom: 0;
-    line-height: 1px;
-    margin-bottom: 15px;
-    color: lighten($secondary, 30);;
-  }
-  
-  p {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    position: relative;
     font-size: 32px;
-    font-weight: 700;
-    color: $black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: $secondary;
   }
 
-  p::after {
+  h2::before {
     content: '';
     position: absolute;
     display: block;
-    width: 60px;
-    height: 2px;
-    background: $primary;
-    bottom: 0;
-    left: calc(50% - 30px);
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
   }
 
+  h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: $primary;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 34px;
+    color: $black;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
 }
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -142,6 +158,67 @@ section {
 }
 
 /*--------------------------------------------------------------
+# intro
+--------------------------------------------------------------*/
+
+#intro {
+    border-bottom: 1px solid $primary-light;
+}
+
+.intro {
+
+  margin-top: 220px;
+
+  h3 {
+    font-weight: 700;
+    font-size: 32px;
+    color: $black;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: $secondary;
+  }
+
+  i {
+    font-size: 48px;
+    margin-top: 15px;
+    color: $primary-light;
+  }
+
+  p {
+    font-size: 24px;
+    color: lighten($default, 15);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    margin-top: 30px;
+
+    li +li {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .about-img img {
+      max-width: 70%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .about-img img {
+      max-width: 90%;
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Confirmation
 --------------------------------------------------------------*/
 
@@ -216,6 +293,136 @@ section {
     .about-img img {
       max-width: 90%;
     }
+  }
+}
+
+/*--------------------------------------------------------------
+# Signup section
+--------------------------------------------------------------*/
+
+#signup {
+    border-bottom: 1px solid $primary-light;
+}
+
+.signup {
+
+  h3 {
+    font-weight: 700;
+    font-size: 34px;
+    color: $black;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: $secondary;
+  }
+
+  i {
+    font-size: 48px;
+    margin-top: 15px;
+    color: $primary-light;
+  }
+
+  p {
+    font-size: 18px;
+    color: lighten($default, 15);
+  }
+
+  .php-email-form {
+    width: 100%;
+
+    .form-group {
+      padding-bottom: 8px;
+    }
+
+    .validate {
+      display: none;
+      color: red;
+      margin: 0 0 15px 0;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600;
+      & br + br {
+        margin-top: 25px;
+      }
+    }
+
+    .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+
+    .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+      }
+
+    }
+
+    input, textarea, select {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      padding: 10px !important;
+      &:focus {
+        border-color: $primary;
+      }
+    }
+
+    input, select {
+      height: 44px;
+    }
+
+    textarea {
+      padding: 10px 12px;
+    }
+
+    button[type="submit"] {
+    font-family: $font-primary;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border: 1px solid $primary;
+    border-radius: 12px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: $primary;
+    background: $white;
+    &:hover {
+      color: $white;
+      background: lighten($primary, 10);
+    }
+    }
+
   }
 }
 

@@ -11,17 +11,17 @@ def durabilityBuilder_index(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             body = {
-                "name": form.cleaned_data["name"],
-                "email": form.cleaned_data["email"],
-                "subject": form.cleaned_data["subject"],
-                "message": form.cleaned_data["message"],
+                "name": "Name: " + form.cleaned_data["name"],
+                "email": "Email Address: " + form.cleaned_data["email"],
+                "subject": "Subject: " + form.cleaned_data["subject"],
+                "message": "Message: " + form.cleaned_data["message"],
             }
             message = "\n".join(body.values())
             try:
                 send_mail("Message From Durability Builder Website",
                           message,
                           "mike@durabilitybuilder.com",
-                          ["mikeschmitz42@icloud.com"])
+                          ["mikeschmitz42@gmail.com", "Tim@MultisportEnduranceAcademy.com"])
             except BadHeaderError:
                 return HttpResponse("Invalid Header Found")
 

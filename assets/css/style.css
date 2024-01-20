@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 997;
   transition: all 0.5s;
   background: #fff;
-  box-shadow: 0px 2px 15px #56b766;
+  border-bottom: 1px solid #56b766;
 }
 #header .logo h1 {
   font-size: 30px;
@@ -381,35 +381,49 @@ section {
   background-color: #f1f1f2;
 }
 
+.section-bg-grn {
+  background-color: white;
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
 .section-title h2 {
-  font-size: 24px;
-  font-weight: 700;
-  padding-bottom: 0;
-  line-height: 1px;
-  margin-bottom: 15px;
-  color: white;
-}
-.section-title p {
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-  position: relative;
   font-size: 32px;
-  font-weight: 700;
-  color: #343a40;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #bdbec0;
 }
-.section-title p::after {
+.section-title h2::before {
   content: "";
   position: absolute;
   display: block;
-  width: 60px;
-  height: 2px;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
   background: #138035;
   bottom: 0;
-  left: calc(50% - 30px);
+  left: calc(50% - 20px);
+}
+.section-title h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #343a40;
+}
+.section-title p {
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -492,6 +506,56 @@ section {
 }
 
 /*--------------------------------------------------------------
+# intro
+--------------------------------------------------------------*/
+#intro {
+  border-bottom: 1px solid #56b766;
+}
+
+.intro {
+  margin-top: 220px;
+}
+.intro h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #343a40;
+}
+.intro h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: #bdbec0;
+}
+.intro i {
+  font-size: 48px;
+  margin-top: 15px;
+  color: #56b766;
+}
+.intro p {
+  font-size: 24px;
+  color: #434b53;
+}
+.intro ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.intro ul li + li {
+  margin-top: 20px;
+}
+@media (max-width: 991px) {
+  .intro .about-img img {
+    max-width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .intro .about-img img {
+    max-width: 90%;
+  }
+}
+
+/*--------------------------------------------------------------
 # Confirmation
 --------------------------------------------------------------*/
 .confirmation h3 {
@@ -553,6 +617,116 @@ section {
   .confirmation .about-img img {
     max-width: 90%;
   }
+}
+
+/*--------------------------------------------------------------
+# Signup section
+--------------------------------------------------------------*/
+#signup {
+  border-bottom: 1px solid #56b766;
+}
+
+.signup h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #343a40;
+}
+.signup h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: #bdbec0;
+}
+.signup i {
+  font-size: 48px;
+  margin-top: 15px;
+  color: #56b766;
+}
+.signup p {
+  font-size: 18px;
+  color: #434b53;
+}
+.signup .php-email-form {
+  width: 100%;
+}
+.signup .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.signup .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+.signup .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.signup .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+.signup .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.signup .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.signup .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+.signup .php-email-form input, .signup .php-email-form textarea, .signup .php-email-form select {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+}
+.signup .php-email-form input:focus, .signup .php-email-form textarea:focus, .signup .php-email-form select:focus {
+  border-color: #138035;
+}
+.signup .php-email-form input, .signup .php-email-form select {
+  height: 44px;
+}
+.signup .php-email-form textarea {
+  padding: 10px 12px;
+}
+.signup .php-email-form button[type=submit] {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border: 1px solid #138035;
+  border-radius: 12px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #138035;
+  background: #fff;
+}
+.signup .php-email-form button[type=submit]:hover {
+  color: #fff;
+  background: #1aac47;
 }
 
 /*--------------------------------------------------------------
