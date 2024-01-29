@@ -1,10 +1,10 @@
 from django.shortcuts import render, redirect
-from .forms import ContactForm
+from .forms import ContactForm, ProgramChoice
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
 
 
-def durabilityBuilder_index(request):
+def durabilitybuilder_index(request):
     if request.method == "GET":
         form = ContactForm()
     else:
@@ -36,5 +36,6 @@ def send_confirmation(request):
 
 
 def get_started(request):
+    form = ProgramChoice()
 
-    return render(request, 'durabilityBuilder/get_started.html')
+    return render(request, 'durabilityBuilder/get_started.html', {"form": form})

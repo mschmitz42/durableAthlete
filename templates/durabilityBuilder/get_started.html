@@ -19,87 +19,63 @@
         <section id="intro" class="intro section-bg">
           <div class="container">
 
-            <div class="row justify-content-between">
-              <div class="col-lg-6 pt-5 pt-lg-0">
-                <h3>Getting Started with Durability Builder</h3>
+            <div class="row justify-content-center">
+              <div class="col-10 pt-5 pt-lg-0">
+                <h3>Congratulations on choosing Durability Builder</h3>
                   <ul>
-                      <li><strong>Step 1</strong> - Answer a few short questions so we can get you the version of the program that's right for you.</li>
-                      <li><strong>Step 2</strong> - Purchase the program.</li>
-                      <li><strong>Step 3</strong> - (optional) Register for an account, so you can access follow up and support materials.</li>
+                      <li><strong>Step 1</strong> - Select your Durability Builder program.</li>
+                      <li><strong>Step 2</strong> - Register for a Durability Builder account or log in to your existing account.</li>
+                      <li><strong>Step 3</strong> - Pay for your Durability Builder program (unless it's free).</li>
+                      <li><strong>Step 4</strong> - Continue to your dashboard and access your program contents.</li>
                   </ul>
               </div>
-              <div class="col-lg-6 pt-5 pt-lg-0">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5g8QBuq7_VY?si=iYKog4fSMaU33S5i&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
             </div>
 
           </div>
         </section><!-- End Intro Section -->
 
 
-    <!-- ======= Signup Section ======= -->
+    <!-- ======= program select Section ======= -->
     <section id="signup" class="signup section-bg-grn">
       <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="section-title">
+                        <h3>Select Your Program</h3>
+                        <p>If you're new to Durability Builder or not sure, we suggest the Introductory 2-week Program (Free - no card required to sign up)</p>
+                    </div>
 
-        <div class="section-title">
-            <h3>Tell Us About Yourself</h3>
-            <p>Please fill out the following section so we can get you the right version of the program and make sure it's delivered to the right place.</p>
-        </div>
+                    <form action="#" method="post" role="form" class="select_form">
 
-        <form action="#" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+                        {% csrf_token %}
+
+                        <ul>
+                            {% for p in form.program.field.choices %}
+                                <li>
+                                    <input type="radio" name="program" value="{{p.0}}" required />
+                                    <label for="">{{p.1}}</label>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                        <hr/>
+
+                        <ul>
+                            {% for a in form.account.field.choices %}
+                                <li>
+                                    <input type="radio" name="account" value="{{a.0}}" required />
+                                    <label for="">{{a.1}}</label>
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                      <div class="text-center"><button class="btn-get-started" type="submit">Next</button></div>
+                    </form>
+
+                </div>
             </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-          </div>
-{#          <div class="row">#}
-{#            <div class="col-md-4 form-group mt-3">#}
-{#              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">#}
-{#              <div class="validate"></div>#}
-{#            </div>#}
-{#            <div class="col-md-4 form-group mt-3">#}
-{#              <select name="department" id="department" class="form-select">#}
-{#                <option value="">Select Department</option>#}
-{#                <option value="Department 1">Department 1</option>#}
-{#                <option value="Department 2">Department 2</option>#}
-{#                <option value="Department 3">Department 3</option>#}
-{#              </select>#}
-{#              <div class="validate"></div>#}
-{#            </div>#}
-{#            <div class="col-md-4 form-group mt-3">#}
-{#              <select name="doctor" id="doctor" class="form-select">#}
-{#                <option value="">Select Doctor</option>#}
-{#                <option value="Doctor 1">Doctor 1</option>#}
-{#                <option value="Doctor 2">Doctor 2</option>#}
-{#                <option value="Doctor 3">Doctor 3</option>#}
-{#              </select>#}
-{#              <div class="validate"></div>#}
-{#            </div>#}
-{#          </div>#}
-
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-          </div>
-          <div class="text-center"><button class="btn-get-started" type="submit">Sign Up</button></div>
-        </form>
-
       </div>
-    </section><!-- End Appointment Section -->
+    </section><!-- End program select Section -->
 
       </main>
 
