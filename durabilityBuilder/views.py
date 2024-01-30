@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required, user_passes_test
 from django.shortcuts import render, redirect
 from .forms import ContactForm, ProgramChoice
 from django.core.mail import send_mail, BadHeaderError
@@ -36,6 +37,32 @@ def send_confirmation(request):
 
 
 def get_started(request):
-    form = ProgramChoice()
+    if request.method == "GET":
+        form = ProgramChoice()
+    else:
+        form = ProgramChoice(request.POST)
+        if form.is_valid():
+            program_choice = form.cleaned_data["program"]
+            account = form.cleaned_data["account"]
+
+            request.session["program_choice"] = program_choice
+
+            if account == "a1":
+                return redirect("durabilityBuilder:send_confirm")
+            else:
+                return redirect("durabilityBuilder:dashboard")
+
+        else:
+            return HttpResponse("Invalid Form Value(s)")
 
     return render(request, 'durabilityBuilder/get_started.html', {"form": form})
+
+
+def user_is_staff(user):
+    return user.is_staff
+
+
+@login_required
+@user_passes_test(user_is_staff)
+def dashboard(request):
+    return render(request, 'durabilityBuilder/dashboard.html')

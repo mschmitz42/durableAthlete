@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from durabilityBuilder import views
 
 
@@ -10,4 +10,5 @@ urlpatterns = [
     path('home', views.durabilitybuilder_index, name='home'),
     path('send_confirm', views.send_confirmation, name='send_confirm'),
     path('get_started', views.get_started, name='get_started'),
+    path('dashboard/', views.dashboard, name='dashboard'),
 ]

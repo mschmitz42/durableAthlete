@@ -1,0 +1,91 @@
+{% extends 'base_nonav.html' %}
+
+{%  load static %}
+
+{% block content %}
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="logo d-flex align-items-center justify-content-between ms-5">
+        <a href="{% url 'durabilityBuilder:home' %}" class="logo d-flex align-items-center w-auto">
+        {#                  <img src="{% static 'img/logo.png' %}" alt="">#}
+          <span class="d-none d-lg-block">Durability Builder</span>
+        </a>
+       <i class="bi bi-list toggle-sidebar-btn ms-3"></i>
+    </div><!-- End Logo -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="{% url 'durabilityBuilder:dashboard' %}">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-heading">Swim Sessions</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-water"></i>
+          <span>Add a new Session</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-gear"></i>
+          <span>Edit a Session</span>
+        </a>
+      </li>
+
+      <li class="nav-heading">User Management</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person-plus"></i>
+          <span>Add a User Account</span>
+        </a>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-gear"></i>
+          <span>Edit a User Account</span>
+        </a>
+      </li>
+
+      <li class="nav-heading">My Account</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'logout' %}">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Logout</span>
+        </a>
+      </li><!-- End Logout Page Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+
+
+
+{% endblock %}
