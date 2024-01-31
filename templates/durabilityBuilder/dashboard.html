@@ -6,12 +6,12 @@
 
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
+  <header id="header_nonav" class="fixed-top d-flex align-items-center">
 
     <div class="logo d-flex align-items-center justify-content-between ms-5">
         <a href="{% url 'durabilityBuilder:home' %}" class="logo d-flex align-items-center w-auto">
-        {#                  <img src="{% static 'img/logo.png' %}" alt="">#}
-          <span class="d-none d-lg-block">Durability Builder</span>
+                          <img src="{% static 'img/logo.png' %}" alt="">
+          <h1 class="d-none d-lg-block">Durability Builder</h1>
         </a>
        <i class="bi bi-list toggle-sidebar-btn ms-3"></i>
     </div><!-- End Logo -->
@@ -30,38 +30,94 @@
         </a>
       </li><!-- End Dashboard Nav -->
 
-      <li class="nav-heading">Swim Sessions</li>
+      <li class="nav-heading">Introductory 2-Week Program</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-water"></i>
-          <span>Add a new Session</span>
+        <a class="nav-link collapsed" data-bs-target="#week1-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Week1</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li>
+        <ul id="week1-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span>Day 1</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-accordion.html">
+              <i class="bi bi-circle"></i><span>Day 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-badges.html">
+              <i class="bi bi-circle"></i><span>Day 3</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-breadcrumbs.html">
+              <i class="bi bi-circle"></i><span>Day 4</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-buttons.html">
+              <i class="bi bi-circle"></i><span>Day 5</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-cards.html">
+              <i class="bi bi-circle"></i><span>Day 6</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-carousel.html">
+              <i class="bi bi-circle"></i><span>Day 7</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Week 1 Nav -->
+
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-gear"></i>
-          <span>Edit a Session</span>
+        <a class="nav-link collapsed" data-bs-target="#week2-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Week2</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-      </li>
-
-      <li class="nav-heading">User Management</li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-person-plus"></i>
-          <span>Add a User Account</span>
-        </a>
-      </li>
-
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-gear"></i>
-          <span>Edit a User Account</span>
-        </a>
-      </li>
+        <ul id="week2-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span>Day 1</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-accordion.html">
+              <i class="bi bi-circle"></i><span>Day 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-badges.html">
+              <i class="bi bi-circle"></i><span>Day 3</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-breadcrumbs.html">
+              <i class="bi bi-circle"></i><span>Day 4</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-buttons.html">
+              <i class="bi bi-circle"></i><span>Day 5</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-cards.html">
+              <i class="bi bi-circle"></i><span>Day 6</span>
+            </a>
+          </li>
+          <li>
+            <a href="components-carousel.html">
+              <i class="bi bi-circle"></i><span>Day 7</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Week 2 Nav -->
 
       <li class="nav-heading">My Account</li>
 

@@ -1,17 +1,20 @@
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
+@use 'sass:color';
+
 section {
   padding: 60px 0;
   overflow: hidden;
 }
 
 .section-bg {
-  background-color: lighten($secondary, 20);
+  background: color.scale($secondary, $lightness: 40%);
 }
 
 .section-bg-grn {
-  background-color: lighten($primary-light, 40);
+  background: color.scale($primary_light, $lightness: 50%);
 }
 
 .section-title {

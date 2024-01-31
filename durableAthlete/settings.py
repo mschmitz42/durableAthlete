@@ -75,7 +75,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'durableAthlete.wsgi.application'
 
-DEFAULT_FROM_EMAIL = "webmaster@derek-haff-fitness.com"
+DEFAULT_FROM_EMAIL = "mike@durabilitybuilder.com"
 EMAIL_HOST = "smtp.office365.com"
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "mike@durabilitybuilder.com"
@@ -144,3 +144,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = "durabilityBuilder:dashboard"
+
+LOGOUT_REDIRECT_URL = "durabilityBuilder:home"

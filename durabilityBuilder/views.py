@@ -63,6 +63,5 @@ def user_is_staff(user):
 
 
 @login_required
-@user_passes_test(user_is_staff)
 def dashboard(request):
     return render(request, 'durabilityBuilder/dashboard.html')

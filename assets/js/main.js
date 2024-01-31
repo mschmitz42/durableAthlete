@@ -42,6 +42,15 @@
   }
 
   /**
+   * Sidebar toggle
+   */
+  if (select('.toggle-sidebar-btn')) {
+    on('click', '.toggle-sidebar-btn', function(e) {
+      select('body').classList.toggle('toggle-sidebar')
+    })
+  }
+
+  /**
    * Navbar links active state on scroll
    */
   let navbarlinks = select('#navbar .scrollto', true)
