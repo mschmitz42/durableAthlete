@@ -21,6 +21,33 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 /*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#main {
+  margin-top: 100px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+}
+@media (max-width: 1199px) {
+  #main {
+    padding: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Page Title
+--------------------------------------------------------------*/
+.pagetitle {
+  margin-bottom: 10px;
+}
+.pagetitle h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #426f9f;
+}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -90,7 +117,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 24px 0;
+  padding: 20px 0;
   background: #abdbb3;
   /* Toggle Sidebar Button */
 }
@@ -150,10 +177,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-weight: 700;
   color: #bdbec0;
   font-family: "Raleway", sans-serif;
-}
-
-#main {
-  margin-top: 72px;
 }
 
 .header {
@@ -1637,7 +1660,7 @@ section {
 }
 
 @media (min-width: 1200px) {
-  #main_nonav, #footer_nonav {
+  #main, #footer {
     margin-left: 300px;
   }
 }
@@ -1647,7 +1670,7 @@ section {
   }
 }
 @media (min-width: 1200px) {
-  .toggle-sidebar #main_nonav, .toggle-sidebar #footer_nonav {
+  .toggle-sidebar #main, .toggle-sidebar #footer {
     margin-left: 0;
   }
   .toggle-sidebar .sidebar {

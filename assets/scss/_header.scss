@@ -40,7 +40,7 @@
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 24px 0;
+  padding: 20px 0;
   background: color.scale($primary_light, $lightness: 50%);
 
   &.header-transparent {
@@ -120,10 +120,6 @@
 
 }
 
-
-#main {
-  margin-top: 72px;
-}
 
 .header {
   transition: all 0.5s;

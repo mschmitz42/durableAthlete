@@ -33,7 +33,7 @@
 }
 
 @media (min-width: 1200px) {
-  #main_nonav, #footer_nonav {
+  #main, #footer {
     margin-left: 300px;
   }
 }
@@ -48,7 +48,7 @@
 
 
   @media (min-width: 1200px) {
-    #main_nonav, #footer_nonav {
+    #main, #footer {
       margin-left: 0;
     }
     .sidebar {

@@ -1,0 +1,200 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Durability Builder</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+
+
+    <!-- Favicons -->
+    <link href="{% static 'img/favicon.png' %}" rel="icon">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+    {% block headContent %}
+
+    {% endblock %}
+
+</head>
+<body>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header_nonav" class="fixed-top d-flex align-items-center">
+
+    <div class="logo d-flex align-items-center justify-content-between ms-5">
+        <a href="{% url 'durabilityBuilder:home' %}" class="logo d-flex align-items-center w-auto">
+                          <img src="{% static 'img/logo.png' %}" alt="">
+          <h1 class="d-lg-block">Durability Builder</h1>
+        </a>
+       <i class="bi bi-list toggle-sidebar-btn ms-3"></i>
+    </div><!-- End Logo -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+{#      <li class="nav-item">#}
+{#        <a class="nav-link " href="{% url 'durabilityBuilder:dashboard' %}">#}
+{#          <i class="bi bi-grid"></i>#}
+{#          <span>Dashboard</span>#}
+{#        </a>#}
+{#      </li><!-- End Dashboard Nav -->#}
+
+      <li class="nav-heading">2-Week Intro Program</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#week1-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Week1</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="week1-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day1' %}">
+              <i class="bi bi-circle"></i><span>Day 1</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day2' %}">
+              <i class="bi bi-circle"></i><span>Day 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day3' %}">
+              <i class="bi bi-circle"></i><span>Day 3</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day4' %}">
+              <i class="bi bi-circle"></i><span>Day 4</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day5' %}">
+              <i class="bi bi-circle"></i><span>Day 5</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day6' %}">
+              <i class="bi bi-circle"></i><span>Day 6</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day7' %}">
+              <i class="bi bi-circle"></i><span>Day 7</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Week 1 Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#week2-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Week2</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="week2-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day8' %}">
+              <i class="bi bi-circle"></i><span>Day 1</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day9' %}">
+              <i class="bi bi-circle"></i><span>Day 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day10' %}">
+              <i class="bi bi-circle"></i><span>Day 3</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day11' %}">
+              <i class="bi bi-circle"></i><span>Day 4</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day12' %}">
+              <i class="bi bi-circle"></i><span>Day 5</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day13' %}">
+              <i class="bi bi-circle"></i><span>Day 6</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'durabilityBuilder:intro_day14' %}">
+              <i class="bi bi-circle"></i><span>Day 7</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Week 2 Nav -->
+
+      <li class="nav-heading">My Account</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'durabilityBuilder:under_construction' %}">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{% url 'logout' %}">
+          <i class="bi bi-box-arrow-right"></i>
+          <span>Logout</span>
+        </a>
+      </li><!-- End Logout Page Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+
+</body>
+</html>
+
