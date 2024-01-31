@@ -1,6 +1,9 @@
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
+
+@use 'sass:color';
+
 .sidebar {
   position: fixed;
   top: 100px;
@@ -14,7 +17,7 @@
   scrollbar-width: thin;
   scrollbar-color: lighten($tertiary, 50) transparent;
   box-shadow: 0px 0px 20px rgba($secondary, 0.10);
-  background-color: #fff;
+  background-color: color.scale($primary-light, $lightness: 50%);
   @media (max-width: 1199px) {
     left: -300px;
   }
@@ -70,9 +73,9 @@
   }
 
   .nav-heading {
-    font-size: 11px;
+    font-size: 18px;
     text-transform: uppercase;
-    color: lighten($tertiary, 40);
+    color: $tertiary;
     font-weight: 600;
     margin: 10px 0 5px 15px;
   }
@@ -82,9 +85,9 @@
     align-items: center;
     font-size: 15px;
     font-weight: 600;
-    color: $primary;
+    color: $tertiary;
     transition: 0.3;
-    background: lighten($secondary, 76);
+    background-color: color.scale($primary-light, $lightness: 50%);
     padding: 10px 15px;
     border-radius: 4px;
 
@@ -95,18 +98,18 @@
     }
 
     &.collapsed {
-      color: $secondary;
-      background: #fff;
+      color: $tertiary;
+      background: color.scale($primary-light, $lightness: 50%);
       i {
-        color: lighten($tertiary, 40);
+        color: $tertiary;
       }
     }
 
     &:hover {
-      color: $primary;
-      background: lighten($secondary, 76);
+      color: $white;
+      background: color.scale($primary-light, $lightness: 50%);
       i {
-        color: $primary
+        color: $white;
       }
     }
 
@@ -131,7 +134,7 @@
       align-items: center;
       font-size: 14px;
       font-weight: 600;
-      color: $secondary;
+      color: $tertiary;
       transition: 0.3;
       padding: 10px 0 10px 40px;
       transition: 0.3s;
@@ -143,7 +146,7 @@
       }
 
       &:hover, &.active {
-        color: $primary;
+        color: $white;
       }
       &.active {
         i {
