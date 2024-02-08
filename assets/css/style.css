@@ -625,6 +625,65 @@ section {
 }
 
 /*--------------------------------------------------------------
+# workout
+--------------------------------------------------------------*/
+.workout-section {
+  margin: 0 50px;
+  padding: 30px 0;
+  font-weight: 500;
+  font-size: 18px;
+  color: #343a40;
+}
+.workout-section .video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.workout-section .image-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.workout-section .image-wrapper img {
+  width: 240px;
+  height: 345px;
+}
+.workout-section .section-title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #343a40;
+  margin-top: 50px;
+}
+.workout-section .section-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #343a40;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.workout-section ol {
+  padding: 0;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.workout-section ol li + li {
+  margin-top: 20px;
+}
+.workout-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.workout-section ul li + li {
+  margin-top: 20px;
+}
+
+/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 #about {
