@@ -17,7 +17,7 @@
   scrollbar-width: thin;
   scrollbar-color: lighten($tertiary, 50) transparent;
   box-shadow: 0px 0px 20px rgba($secondary, 0.10);
-  background-color: color.scale($primary-light, $lightness: 50%);
+  background-color: lighten($primary-light, 25%);
   @media (max-width: 1199px) {
     left: -300px;
   }
@@ -87,7 +87,7 @@
     font-weight: 600;
     color: $tertiary;
     transition: 0.3;
-    background-color: color.scale($primary-light, $lightness: 50%);
+    background-color: lighten($primary-light, 25%);
     padding: 10px 15px;
     border-radius: 4px;
 
@@ -99,7 +99,7 @@
 
     &.collapsed {
       color: $tertiary;
-      background: color.scale($primary-light, $lightness: 50%);
+      background: lighten($primary-light, 25%);
       i {
         color: $tertiary;
       }
@@ -107,7 +107,7 @@
 
     &:hover {
       color: $white;
-      background: color.scale($primary-light, $lightness: 50%);
+      background: lighten($primary-light, 25%);
       i {
         color: $white;
       }

@@ -41,14 +41,14 @@
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: color.scale($primary_light, $lightness: 50%);
+  background: lighten($primary_light, 25%);
 
   &.header-transparent {
     background: transparent;
   }
 
   &.header-scrolled {
-  background: color.scale($primary_light, $lightness: 60%);
+  background: lighten($primary_light, 25%);
     padding: 12px;
   }
 

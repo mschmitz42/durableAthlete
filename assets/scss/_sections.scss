@@ -10,11 +10,11 @@ section {
 }
 
 .section-bg {
-  background: color.scale($secondary, $lightness: 40%);
+  background: lighten($secondary, 20%);
 }
 
 .section-bg-grn {
-  background: color.scale($primary_light, $lightness: 50%);
+  background: lighten($primary_light, 25%);
 }
 
 .section-title {
@@ -157,6 +157,13 @@ section {
     margin-top: 50px;
     margin-bottom: 20px;
  }
+
+  .list-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: $black;
+  }
 
   ol {
     padding: 0;

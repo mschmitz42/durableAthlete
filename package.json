@@ -1,21 +1,29 @@
 {
   "name": "durableathlete",
   "version": "1.0.0",
-  "description": "",
   "scripts": {
-    "build": "parcel build assets/style.js"
+    "build": "parcel build assets/scss/style.scss --dist-dir assets/css",
+    "watch": "parcel watch assets/scss/style.scss --dist-dir assets/css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.3",
-    "parcel": "^2.10.3",
-    "parcel-reporter-static-files-copy": "^1.5.3",
-    "sass": "^1.70.0"
+    "@parcel/transformer-sass": "^2.15.2",
+    "parcel": "^2.15.2",
+    "sass": "^1.89.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.2"
-  }
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mschmitz42/durableAthlete.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mschmitz42/durableAthlete/issues"
+  },
+  "homepage": "https://github.com/mschmitz42/durableAthlete#readme",
+  "description": ""
 }
