@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'www.durabilitybuilder.com',
-    '127.0.0.1'
+    '127.0.0.1',
+    'localhost'
 ]
 
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sass_processor',
     'durableAthlete',
     'durabilityBuilder',
 ]
@@ -132,12 +134,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/assets/'
+STATICFILES_DIRS = [BASE_DIR / 'assets']
+STATIC_ROOT = BASE_DIR / 'dist'
 
-STATIC_URL = 'static/'
+SASS_PROCESSOR_ENABLED = False
+SASS_PROCESSOR_ROOT = BASE_DIR / 'assets/scss'
+SASS_PROCESSOR_BINARY = str(BASE_DIR / 'node_modules' / '.bin' / 'sass')
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'assets'),
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
 ]
 
 # Default primary key field type
@@ -148,3 +156,19 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "durabilityBuilder:dashboard"
 
 LOGOUT_REDIRECT_URL = "durabilityBuilder:home"
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'sass_processor': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+        },
+    },
+}
