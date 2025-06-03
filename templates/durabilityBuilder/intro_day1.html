@@ -7,7 +7,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Day One</h1>
+      <h1>Welcome to Day 1</h1>
         <hr/>
       <nav>
         <ol class="breadcrumb">
@@ -83,6 +83,17 @@
   </main>
 
 
-
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the collapse element
+        const week1Nav = document.getElementById('week1-nav');
+        // Create a Bootstrap collapse instance
+        const bsCollapse = new bootstrap.Collapse(week1Nav, {
+          toggle: false // Prevent automatic toggling
+        });
+        // Show the collapse
+        bsCollapse.show();
+      });
+    </script>
 
 {% endblock %}

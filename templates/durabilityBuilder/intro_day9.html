@@ -18,13 +18,71 @@
       </nav>
     </div><!-- End Page Title -->
 
-    <section id="temp_dashboard" class="section">
-        <h3>This is where the day's workouts/videos/etc. will go.</h3>
+    <section id="intro-section" class="section workout-section">
+        <div class="video-wrapper mt-5">
+            <video width="560" height="315" controls>
+                <source src="https://www.dropbox.com/scl/fi/hb2o9zd0hzptyg1zkjy1f/14ddkday9edit1.mov?rlkey=ynrgg7rx7w8zqrfi4ytu6jzo7&st=56nzkgfr&raw=1" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section-title">You Don’t Lack Motivation (But You Need Something Else)</div>
+
+            <p>Have you ever felt that surge of motivation—convincing yourself that this time it’s different—only for that
+                energy to fizzle out in no time? That’s the motivational trap…</p>
+
+            <p>Motivation is a bit like an unreliable partner. They show up strong at first but disappear when you need them
+                the most.</p>
+
+            <p>Consistency, on the other hand, is your ideal partner—they’re there through every high and low, guiding you
+                forward.</p>
+
+            <p>What if you didn’t have to rely on fleeting motivation?</p>
+
+            <p>What if you had a system that kept you on track regardless of how inspired you felt on any given day?</p>
+
+            <p>I get asked all the time, “How do you keep improving?” The truth is, I stopped chasing motivation and started
+                building consistency—systems and routines around training that kept me going, regardless of how pumped I
+                felt each day.</p>
+
+            <p><span class="list-title">What about you?</span></p>
+
+            <p>How many times has motivation left you hanging? Would it be different if you had a reliable program designed
+                to stick with you through thick and thin?</p>
+
+            <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
+
+            <ul>
+                <li><span class="list-title">Daily Mobility</span>: Lacrosse Ball Under Hips - <a href="#">[Watch it here]</a></li>
+                <li><span class="list-title">Technique Drill</span>: Swim – Vertical Kick - Katie - <a href="#">[Watch it here]</a></li>
+                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+            </ul>
+
+            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+
+          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+
+           <p>And I’ll see you tomorrow.</p>
+
+           <p><span class="list-title">Tim</span></p>
+
     </section>
 
   </main>
 
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the collapse element
+        const week1Nav = document.getElementById('week2-nav');
+        // Create a Bootstrap collapse instance
+        const bsCollapse = new bootstrap.Collapse(week1Nav, {
+          toggle: false // Prevent automatic toggling
+        });
+        // Show the collapse
+        bsCollapse.show();
+      });
+    </script>
 
 
 {% endblock %}

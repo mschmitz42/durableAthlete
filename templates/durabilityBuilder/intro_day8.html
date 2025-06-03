@@ -18,13 +18,81 @@
       </nav>
     </div><!-- End Page Title -->
 
-    <section id="temp_dashboard" class="section">
-        <h3>This is where the day's workouts/videos/etc. will go.</h3>
+    <section id="intro-section" class="section workout-section">
+        <div class="video-wrapper mt-5">
+            <video width="560" height="315" controls>
+                <source src="https://www.dropbox.com/scl/fi/0wkxshoh4wvfvc2rd2oli/14ddkday8edit1.mov?rlkey=6q073kcfd4cw7sdcxg3y18j3m&st=p3vl6yla&raw=1" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section-title">My biggest regret (don’t make the same mistake)</div>
+
+            <p>As a triathlete and a coach, I’ve been where you are. Battling those relentless overuse injuries and sifting
+                through heaps of conflicting information was a journey in itself. And I can tell you – nothing’s more
+                frustrating than going in circles.</p>
+
+            <p>You know the routine: try this advice, then that one. But nothing seemed to work quite right or cover all the
+                bases. I eventually realized, if I was going to get out of pain and back to peak performance, I needed a
+                deeper understanding of the human body and what truly works for athletes like us.</p>
+
+            <p>So, I did just that. I went back to school, dug into human physiology, earned certifications, and devoted
+                years to building a better approach. But even after all that, I still hadn’t found a program that checked
+                all the boxes.</p>
+
+            <p>That’s why I created one myself.</p>
+
+            <p>My Durability Builder program isn’t just a random collection of exercises – it’s the result of years of
+                study, hard lessons, and a whole lot of time spent figuring out exactly what gets real results for
+                triathletes. And it’s specifically for athletes like you, who want to get out of pain, stay strong, and go
+                faster.</p>
+
+            <p>Imagine having a program that’s built with your exact needs in mind, tailored to prevent injuries, and
+                improve performance in a way that actually lasts. You can skip the endless trial-and-error and start making
+                measurable progress, right from Day 1.</p>
+
+            <p>There are two ways to pay: time or money. I learned this the hard way. If I could change one thing, it would
+                be investing in the right solution sooner. The question isn’t just how to reach your goals—it’s who will
+                guide you. I’ve spent years uncovering the answers, and now, I’m here to show you exactly how to get there,
+                faster, healthier, and without the guesswork.</p>
+
+            <p>Years ago, I made the choice to commit fully to my own training, and it transformed everything. Now, I’m
+                offering that same support to you. Because the quickest path back to your best self is having the right
+                guide at your side.</p>
+
+            <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
+
+            <ul>
+                <li><span class="list-title">Daily Mobility</span>: Hammy stretch, on your back with a band - <a href="#">[Watch it here]</a></li>
+                <li><span class="list-title">Technique Drill</span>: Bike, Flatten out a rolling course+ABP(always be pedaling) - <a href="#">[Watch it here]</a></li>
+                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+            </ul>
+
+            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+
+          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+
+           <p>And I’ll see you tomorrow.</p>
+
+           <p><span class="list-title">Tim</span></p>
+
     </section>
 
   </main>
 
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the collapse element
+        const week1Nav = document.getElementById('week2-nav');
+        // Create a Bootstrap collapse instance
+        const bsCollapse = new bootstrap.Collapse(week1Nav, {
+          toggle: false // Prevent automatic toggling
+        });
+        // Show the collapse
+        bsCollapse.show();
+      });
+    </script>
 
 
 {% endblock %}

@@ -18,13 +18,84 @@
       </nav>
     </div><!-- End Page Title -->
 
-    <section id="temp_dashboard" class="section">
-        <h3>This is where the day's workouts/videos/etc. will go.</h3>
+    <section id="intro-section" class="section workout-section">
+        <div class="video-wrapper mt-5">
+            <video width="560" height="315" controls>
+                <source src="https://www.dropbox.com/scl/fi/nhkyp4bgz5i88u87slesd/14ddkday11edit2.mov?rlkey=4zff9pcsxh6gxcy6m3q5d2d5m&st=aad8ij30&raw=1" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="section-title">How to Get Results Even When You're Busy</div>
+
+        <p>Ever feel like you’re juggling everything—work, family, training, recovery—and still not seeing the results
+            you want? When you’re balancing life and trying to get back in race shape, it can feel like there’s just not
+            enough time.</p>
+
+        <p>But here’s the truth: it doesn’t have to be this hard. You don’t need to check every box or follow a rigid
+            plan to see real progress. You just need to know <span class="list-title">what to focus on next.</span></p>
+
+        <p><span class="list-title">The Problem</span>: <br/>I hear folks say things like, “I’m too busy to keep up with a training plan.”</p>
+
+        <p>I get it—life gets busy, and a complicated training plan can feel like just one more thing to squeeze in. But
+            here’s the key: <span class="list-title">It’s not about cramming everything in</span> all the time. It’s about <span class="list-title">prioritizing</span> and <span class="list-title">blending</span>
+            what matters most.</p>
+
+        <p><span class="list-title">The Solution</span>:<br/>This is where built-in flexibility really shines. The beauty of the 6 Week Durability
+            Builder and the Fully Customized Training Program is that they adapt to your schedule, not the other way
+            around. They’re designed to be efficient and manageable, helping you build durability—the kind of strength
+            that supports both your training and your everyday life.</p>
+
+        <p>You don’t have to do everything all the time. Instead, focus on the consistent actions that you can fit into
+            your schedule. It’s the consistency that leads to progress over time.</p>
+
+        <p><span class="list-title">Here’s what you can do today:</span></p>
+ 
+            <ul>
+                <li><span class="list-title">Prioritize what matters now</span>: Focus on mobility and technique. These are the building blocks that will keep you injury-free and ready to push harder when you’re able.</li>
+                <li><span class="list-title">Blend your training with life</span>: Take a walk with the family, work out with friends, fit in some 3DME during work breaks, or stretch while watching TV. It doesn’t have to be perfect—just consistent.</li>
+                <li><span class="list-title">Commit to consistency, not perfection</span>: A few minutes of mobility work throughout the day is more effective than cramming everything into one session.</li>
+            </ul>
+
+        <p>If you’re still not sure how to make this work with your schedule, let’s set up a <span class="list-title">15-minute consultation</span>.
+            I’ll help you figure out how to set the right goals for the time you have so you can keep progressing
+            without feeling overwhelmed.</p>
+
+        <p>You deserve to feel better, go faster, and stay out of pain—without the extra struggle.</p>
+
+            <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
+
+            <ul>
+                <li><span class="list-title">Daily Mobility</span>: Lunge to Hammy stretch - <a href="#">[Watch it here]</a></li>
+                <li><span class="list-title">Technique Drill</span>: Bike – ILT – 65 cadence - <a href="#">[Watch it here]</a></li>
+                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+            </ul>
+
+            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+
+          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+
+           <p>And I’ll see you tomorrow.</p>
+
+           <p><span class="list-title">Tim</span></p>
+
     </section>
 
   </main>
 
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the collapse element
+        const week1Nav = document.getElementById('week2-nav');
+        // Create a Bootstrap collapse instance
+        const bsCollapse = new bootstrap.Collapse(week1Nav, {
+          toggle: false // Prevent automatic toggling
+        });
+        // Show the collapse
+        bsCollapse.show();
+      });
+    </script>
 
 
 {% endblock %}
