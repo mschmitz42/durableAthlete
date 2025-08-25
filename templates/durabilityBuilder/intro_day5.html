@@ -1,81 +1,109 @@
 {% extends 'base_dashboard.html' %}
 
-{%  load static %}
+{% load static %}
 
 {% block content %}
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Welcome to Day 5</h1>
-        <hr/>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
-          <li class="breadcrumb-item active">Day 5</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+        <div class="pagetitle">
+            <h1>Welcome to Day 5</h1>
+            <hr/>
+            <nav>
+                <ol class="breadcrumb">
+                    {#          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>#}
+                    <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Day 5</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
 
-    <section id="intro-section" class="section workout-section">
-        <div class="video-wrapper mt-5">
-            <video width="560" height="315" controls>
-                <source src="https://www.dropbox.com/scl/fi/7tnhwzyazh8fd3macpnab/14ddkday5edit1.mov?rlkey=lp0h521mbnv0n1e39gna2n42t&st=ga96da2k&raw=1" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <section id="intro-section" class="section workout-section">
 
-        <div class="section-title">6 weeks to Feeling Stronger & Injury Free</div>
+            <div style="padding:40% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1103644271?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="14ddkday5 DB website"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
 
+            <div class="section-title">Ready to build on what you’ve started?</div>
 
-            <p>Imagine yourself just six weeks from now—training smoothly, free from those nagging pains, and finally
-                feeling like the athlete you’ve always wanted to be. Moving efficiently, faster, and stronger.</p>
+            <p>Hey Athletes,</p>
 
-            <p>For years, I searched for a program that balanced triathlon training with real life—jobs, family, and
-                everything else. I needed something that built both strength and efficiency without risking injury, focusing
-                on sustainable progress rather than quick wins. In other words, durability. When I couldn’t find that
-                program, I decided to create it myself</p>
+            <p>We’ve covered a lot in just 5 days. You’ve already seen how small shifts—mobility work, technique tweaks,
+                and smarter training—can reduce pain and help you move better.</p>
 
-            <p>Six weeks from now, you could be seeing the difference: more endurance, faster recovery, and that confidence
-                to push harder without worrying about injuries. It’s all from investing in a stronger, more durable you.</p>
+            <p>Now, imagine what 6 focused weeks can do.</p>
 
-            <p>So, here’s the question—how much longer will you let injuries hold you back? Or watch others progress faster,
-                knowing that could’ve been you? Making a change now means investing in the training that moves you forward
-                for good. </p>
+            <p>I created the 6-Week Durability Builder Program to build on what you’ve started here. It’s a complete
+                triathlon training system that integrates mobility, technique, strength, and endurance to keep you
+                injury-free and moving forward.</p>
 
-            <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
+            <p>Here’s what you’ll get:</p>
 
             <ul>
-                <li><span class="list-title">Daily Mobility</span>: Ankle dorsiflexion band optional - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Technique Drill</span>: Bike-(ILT)Isolated Leg Training - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+                <li>Structured swim, bike, run, and strength workouts delivered in TrainingPeaks.</li>
+                <li>Integrated daily mobility (3DME) to keep injuries at bay.</li>
+                <li>Technique drills that sharpen your efficiency in every discipline.</li>
+                <li>Flexible plans for Super Sprint through 70.3 (with Ironman options available separately).</li>
             </ul>
 
-            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+            <p>For the rest of this challenge, you can join for just $118 (50% off). This offer is only available while
+                the 14-day course is running.</p>
 
-          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+            <p>And for those ready to go further, you can also jump straight to the Monthly Event-Based Program—our most
+                customized option—for $189/month. Sign up before the end of the 14 days, and I’ll waive the $100 setup
+                fee.</p>
 
-           <p>And I’ll see you tomorrow.</p>
+            <p>Click <a href="https://www.facebook.com/groups/859964805679977" target="_blank">here</a> to join now and keep your momentum going.</p>
 
-           <p><span class="list-title">Tim</span></p>
+            <p>Start now. Build durability. Train without compromise.</p>
 
-    </section>
+            <p><span class="list-title">Watch today’s video where I break down the details.</span></p>
 
-  </main>
+            <p>See you inside,</p>
+
+            <p><span class="list-title">Tim</span></p>
+
+            <p>P.S.</p>
+
+            <div class="section-subtitle">WAIT!! Don’t forget today’s Mobility & Technique Challenge:</div>
+
+            <p>Most triathletes ignore ankles—but locked-up ankles kill power, speed and create movement compensations
+                all the way up the chain. Ankles with full, native range of motion means more speed and stability on the
+                run, bike and believe it or not, even the swim. The high-cadence Isolated Leg Training (ILT) drill
+                smooths out your pedal stroke, helping you ride faster with less effort.</p>
+            <ul>
+                <li><span class="list-title">Daily Mobility</span>: Ankle dorsiflexion band optional</li>
+                <li><div style="padding:60% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1102352023?h=9e8ae05480&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ankledorseflex.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></li>
+                <li><span class="list-title">Technique Drill</span>: Bike-(ILT)Isolated Leg Training</li>
+                <li><div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1102360040?h=0e453f091e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ILT90.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></li>
+            </ul>
+
+            <p>Finished the ankle drill and ILT? Post your numbers (or a short video) in the <a
+                    href="https://www.facebook.com/groups/859964805679977" target="_blank">Facebook group</a> so we can
+                keep tabs on progress.</p>
+
+        </section>
+
+    </main>
 
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the collapse element
-        const week1Nav = document.getElementById('week1-nav');
-        // Create a Bootstrap collapse instance
-        const bsCollapse = new bootstrap.Collapse(week1Nav, {
-          toggle: false // Prevent automatic toggling
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the collapse element
+            const week1Nav = document.getElementById('week1-nav');
+            // Create a Bootstrap collapse instance
+            const bsCollapse = new bootstrap.Collapse(week1Nav, {
+                toggle: false // Prevent automatic toggling
+            });
+            // Show the collapse
+            bsCollapse.show();
         });
-        // Show the collapse
-        bsCollapse.show();
-      });
     </script>
 
 

@@ -1,113 +1,146 @@
 {% extends 'base_dashboard.html' %}
 
-{%  load static %}
+{% load static %}
 
 {% block content %}
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Welcome to Day 3</h1>
-        <hr/>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
-          <li class="breadcrumb-item active">Day 3</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+        <div class="pagetitle">
+            <h1>Welcome to Day 3</h1>
+            <hr/>
+            <nav>
+                <ol class="breadcrumb">
+                    {#          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>#}
+                    <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Day 3</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
 
-    <section id="intro-section" class="section workout-section">
-        <div class="video-wrapper mt-5">
-            <video width="560" height="315" controls>
-                <source src="https://www.dropbox.com/scl/fi/0dmos51isycnfaaphqp6i/14ddkday3edit2.mov?rlkey=hq3z120ob0kqitv9ciqegufd0&st=6cr6wdlc&raw=1" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <section id="intro-section" class="section workout-section">
+            <div class="mt-5">
+                <div style="padding:40% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/1102062799?h=63054242f6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                            title="14 Day Durability Kickstart, Day 3"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
 
-        <div class="section-title">The wake-up call</div>
+            <div class="section-title">The wake-up call</div>
 
+            <p>Hey Athletes,</p>
 
-            <p>Do you remember the wake-up call when you realized your training approach wasn’t working? I do, and it
-                transformed my entire approach to triathlon.</p>
+            <p>Yesterday, we broke down the two beliefs that keep triathletes stuck: pushing through pain or stopping
+                completely.</p>
 
-            <p>It happened when I was sidelined by an IT band strain—yet another frustratingly familiar injury. I had been
-                pushing my limits while neglecting the "little things" like mobility and technique. My body was breaking
-                down, my knee hurt like hell, and I knew something had to change.</p>
+            <p>Today, we’re taking it a step further. In today’s video, I break down the 4 core skills—mobility,
+                technique, strength, and endurance—and how they work together to keep you training strong.</p>
 
-            <p>I took a deep dive into why I kept getting injured and discovered that becoming durable wasn’t about grinding
-                harder; it was about working smarter. Since I thought I couldn’t work out during my downtime, I hit the
-                books—lots of them! I also scoured the internet. Holy crap, there is so much misleading information out
-                there! Anywho…</p>
+            <p>For me, this lesson came the hard way. My wake-up call? An IT band strain that benched me—again. I’d been
+                piling on miles, skipping the “boring” stuff like mobility and technique, and my body finally said
+                enough.
+                During that downtime, I dug in—books, videos, research—anything I could find to figure out why I kept
+                breaking down. Here’s what I learned:</p>
 
-            <p>As I focused on improving my mobility and technique, I finally started to see real progress. I began with
-                swimming, where I struggled to maintain proper form. Let’s be real—I sucked. My breathing was off, my legs
-                sank, and my shoulder felt like it had an ice pick lodged in it. Every stroke felt like a fight against the
-                water. I realized I needed to prioritize my form and technique if I wanted to improve.</p>
+            <p><span class="bold-text">Swim:</span> My form was a mess. Fighting the water every lap—legs sinking,
+                shoulder screaming like it had an ice pick in it. Once I worked on shoulder mobility and basic swim
+                drills, I stopped fighting the water and started gliding like I belonged there.</p>
 
-            <p>When I dedicated time to mobilizing my shoulders and focusing on basic swim drills while relaxing, everything
-                changed. I became more efficient with each stroke. This wasn’t just about correcting weaknesses; it was
-                about finding balance.</p>
+            <p><span class="bold-text">Bike:</span> My hips were locked from riding and sitting all day. My pedal stroke
+                was choppy, always in the wrong gear, burning out my quads. Mobility work and pedal stroke drills
+                smoothed it out. Suddenly, riding farther wasn’t an issue and I was climbing like a homesick angel.</p>
 
-            <p>Next, I turned my attention to cycling. I had it all wrong, struggling to maintain a smooth pedal stroke,
-                always in the wrong gear and burning out my quads. My hips were incredibly tight from always being in
-                flexion (typical for cyclists). By focusing on each quadrant of my pedal stroke, getting a proper bike fit,
-                and mobilizing my hips, I began to communicate better with my bike. Before I knew it, I was climbing hills
-                like a homesick angel.</p>
+            <p><span class="bold-text">Run:</span> Plantar fasciitis and I were well-acquainted. Relearning run
+                mechanics and mobilizing my calves and feet was a game changer. Running stopped feeling like something I
+                had to survive—and I actually started to enjoy it.</p>
 
-            <p>And how about that run? This was a big one for me! Let’s just say plantar fasciitis and I are well
-                acquainted. Relearning how to run and mobilize everything below the knee was a total game changer. It took a
-                while, but as my feet and calves finally loosened up, I found joy in running, which made me want to do it
-                more.</p>
+            <p>That’s when it clicked: the basics aren’t just for beginners, and they’re definitely not a waste of
+                time—they’re essential. When you fully engage and work to master them, they’re not boring at all.
+                They’re actually pretty fun. Master the basics, and you unlock your true potential.</p>
 
-            <p>Finally, efficient movement allowed me to focus on building endurance. Training without pain enabled me to
-                sustain longer sessions and actually enjoy them.</p>
+            <p>Here’s the short version:</p>
 
-            <p>This journey taught me that the basics aren’t boring; they're essential for unlocking your full potential as
-                a triathlete. The four core elements of durability—mobility, technique, strength, and endurance—are
-                interconnected. In triathlon, just like in life, you’re only as strong as your weakest link. Each skill you
-                master reveals new challenges and opportunities for growth.</p>
+            <ul>
+                <li><span class="list-title">Mobility:</span> Free up stiff joints. Tight hips, shoulders, and ankles?
+                    They’re slowing you down.
+                </li>
+                <li><span class="list-title">Technique:</span>Move efficiently. Think smoother run form, better pedal
+                    strokes, and easier swimming.
+                </li>
+                <li><span class="list-title">Strength:</span>Build stability that protects you.</li>
+                <li><span class="list-title">Endurance:</span>Pile this on once the first three are dialed in.</li>
+            </ul>
 
-            <p>In the past, injuries would sideline me, but by prioritizing mobility, technique, strength, and endurance, I
-                finally saw real progress. My body stopped breaking down, and my performance soared.</p>
-
-            <p>That’s what my Durability Builder Program is all about: sustainable progress and long-term performance gains.
-                It’s about working smarter, not harder. So let’s embrace the often-neglected and oh-so-crucial elements of
-                mobility and technique together and transform you into a durable triathlete!</p>
+            <p>These aren’t optional. They’re the foundation of staying injury-free and finally training the way you’ve
+                always wanted.</p>
 
             <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
 
+            <p>Today’s drills might look simple, but don’t underestimate them. Hips-to-heels mobility frees up your
+                ankles, knees and hips so running feels easier. The swim cadence test shows you how to use the water as
+                leverage instead of windmilling your arms like an inflatable car-lot dancer.</p>
+
             <ul>
-                <li><span class="list-title">Daily Mobility</span>: Hips to Heels – 2-10 minutes - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Technique Drill</span>: Swim Cadence Assessment - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+                <li><span class="list-title">Daily Mobility</span>: Hips to Heels</li>
+                <li>
+                    <div style="padding:40% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102352516?h=c6a9e56ca6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="hips.to.heels.mp4"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
+                <li><span class="list-title">Technique Drill</span>: Swim Cadence Assessment</li>
+                <li>
+                    <div style="padding:40% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102359857?h=b2f88b6fb5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="swim_cadencevideo.mp4"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
             </ul>
 
-            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+            <p>Let’s see what you’ve got: post a clip or your takeaways from today’s mobility and swim drill in the
+                Durability Triathlete <a
+                        href="https://www.facebook.com/groups/859964805679977" target="_blank">Facebook group</a>.</p>
 
-          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+            <p>Tomorrow, we’ll tackle the next big objection: “I don’t have time.” I’ll show you exactly how to fit this
+                in—even with a packed schedule—so you can keep training without breaking down.</p>
 
-           <p>And I’ll see you tomorrow.</p>
+            <p>Start where you are. Use what you have. Do what you can.</p>
 
-           <p><span class="list-title">Tim</span></p>
+            <p>See you tomorrow,</p>
 
-    </section>
+            <p><span class="list-title">Tim</span></p>
 
-  </main>
+        </section>
+
+    </main>
 
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the collapse element
-        const week1Nav = document.getElementById('week1-nav');
-        // Create a Bootstrap collapse instance
-        const bsCollapse = new bootstrap.Collapse(week1Nav, {
-          toggle: false // Prevent automatic toggling
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the collapse element
+            const week1Nav = document.getElementById('week1-nav');
+            // Create a Bootstrap collapse instance
+            const bsCollapse = new bootstrap.Collapse(week1Nav, {
+                toggle: false // Prevent automatic toggling
+            });
+            // Show the collapse
+            bsCollapse.show();
         });
-        // Show the collapse
-        bsCollapse.show();
-      });
     </script>
 
 

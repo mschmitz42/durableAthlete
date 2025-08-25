@@ -1,91 +1,139 @@
 {% extends 'base_dashboard.html' %}
 
-{%  load static %}
+{% load static %}
 
 {% block content %}
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Welcome to Day 4</h1>
-        <hr/>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
-          <li class="breadcrumb-item active">Day 4</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+        <div class="pagetitle">
+            <h1>Welcome to Day 4</h1>
+            <hr/>
+            <nav>
+                <ol class="breadcrumb">
+                    {#          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>#}
+                    <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Day 4</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
 
-    <section id="intro-section" class="section workout-section">
-        <div class="video-wrapper mt-5">
-            <video width="560" height="315" controls>
-                <source src="https://www.dropbox.com/scl/fi/gvepf70svvh2490eqbjit/14ddkday4edit1.mov?rlkey=crot9w1lt8291a2ggup2w37d8&st=z8f03p5l&raw=1" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <section id="intro-section" class="section workout-section">
+            <div class="mt-5">
+                <div style="padding:40% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/1102068082?h=cd5cac7926&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                            title="14 Day Durability Kickstart, Day 4"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
 
-        <div class="section-title">The wake-up call</div>
+            <div class="section-title">The mileage myth that’s slowing you down</div>
 
+            <p>Hey Athletes,</p>
 
-        <p>Do you ever feel like you’re constantly racing against the clock to squeeze in your training? That there’s
-            just no time left for warm-ups, cool-downs, or those essential mobility and technique drills?</p>
+            <p>Today’s lesson tackles one of the biggest myths in triathlon: <span class="bold-text">“Miles matter most. I don’t have time for warm-ups, cool-downs, mobility, or drills.”</span>
+            </p>
 
-        <p>You’re not alone…</p>
-        <p>I’ve been there too, cramming in miles, skipping the “extras,” only to realize later they weren’t extras at
-            all. They’re the foundation.</p>
+            <p>I used to think this way too. Log more miles, skip the "extras," and magically get faster, right? Nope.
+                That mindset cost me time, progress, and landed me in the injury cycle more than once.</p>
 
-        <p>Triathlon is about more than just logging miles. It’s about how you move. Efficient movement saves you time,
-            energy, and, more importantly, helps keep you injury-free. Training without the mobility and technique work
-            is like swinging a dull axe at a tree. You might get the job done, but it’ll take longer, and you’re more
-            likely to burn out or break down.</p>
+            <p>Watch today’s video where I explain why focusing only on miles is holding you back—and what to do
+                instead.</p>
 
-        <p>If you’re serious about improving and staying injury-free, the mindset of "I don’t have time" couldn’t be
-            further from reality. By dedicating time to mobility and technique, you not only save time but also boost
-            performance and reduce your risk of injury.</p>
+            <p>Here’s the shift that changed everything:</p>
 
-        <p>We all have the same 24 hours in a day. The athletes who succeed, strategize their time for what matters
-            most. Here’s how you can too:</p>
+            <ol>
+                <li><span class="list-title">Train to prevent the strain.</span> Short, focused warm-ups, drills, and
+                    mobility keep you moving well and make you faster.
+                </li>
+                <li><span class="list-title">Treat the strain while you train.</span>If something hurts, you don’t stop
+                    everything—you pivot, mobilize, and focus on what you can do. Triathlon gives you options.
+                </li>
+            </ol>
 
-        <ul>
-            <li><span class="list-title">Mobility</span>: My 3DME (Daily Mobility Exercises) take just 2 minutes per body part per exercise. You’ve already started with one per day, so by today (Day 4), you’ve got 3 exercises in your arsenal. As the program progresses, you’ll get more exercises, and from there, you can alternate them out.  Also, for a real time saver,  you can either do all three at once for about 15 minutes a day or split them into three 2-5-minute sessions. An easy way to fit this into your routine is by doing your mobility exercises on the floor while watching TV at night. By the end of the week, you'll have worked every body part, sometimes more than once. Remember, consistency is key—doing a little bit more often is far more beneficial than cramming everything into one big session a week.</li>
-            <li><span class="list-title">Technique</span>: First, choose a race that fits your available training time. If you’re constantly stressed about fitting in training for your desired event, consider picking a shorter race. I know, it sounds simple, but it's not always easy. Depending on your race length and training volume, you can either incorporate a bit of technique work into each workout or dedicate one session per week for each discipline to perfect your skills. Focusing on training your neural pathways for more efficient movement in each discipline will make you stronger, faster, and a more durable triathlete. Remember, practice doesn’t make perfect—perfect practice does.
-When you think you don’t have time, remember that these small actions—mobility, technique—will save you time in the long run. They’re essential for efficient training and injury prevention</li>
-        </ul>
+            <p><span class="list-title">Here’s how to make it practical:</span></p>
+
+            <ul>
+                <li>Warm up and cool down: Even 5 minutes of walking or easy spinning before and after workouts reduces
+                    injury risk.
+                </li>
+                <li>Intervals over junk miles: Your body adapts to quality, not just quantity. Focused sessions build
+                    speed and form faster than slogging.
+                </li>
+                <li>3DME Mobility: Just 8–12 minutes a day keeps you loose and durable. Knock it out all at once or
+                    split it into 3 short sessions (yes, even while watching TV).
+                </li>
+            </ul>
+
+            <p>These aren’t “extras.” They’re the difference between steady progress and another forced break from
+                training. You don’t need more hours in the day—you just need a smarter strategy. That’s what we’ll build
+                together.</p>
 
             <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
 
+            <p>This one is sneaky. Hanging unlocks your shoulders so swimming feels lighter and posture comes naturally.
+                The barefoot run assessment sharpens your stride so every step is quick, light, and efficient.</p>
+
             <ul>
-                <li><span class="list-title">Daily Mobility</span>: Hang: 2 min chin, 2 min pull - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Technique Drill</span>: Barefoot run Assessment - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+                <li><span class="list-title">Daily Mobility</span>: Hang: 2 min chin, 2 min pull</li>
+                <li>
+                    <div style="padding:40% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102351149?h=dd54f36245&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="Hang Position.mov"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
+                <li><span class="list-title">Technique Drill</span>: Barefoot run Assessment</li>
+                <li>
+                    <div style="padding:40% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102359966?h=d06486d21e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="Barefootrun14ddk.mov"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
             </ul>
 
-            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+            <p>Don’t ghost it—drop your barefoot run form or hang time in the <a
+                    href="https://www.facebook.com/groups/859964805679977" target="_blank">Facebook group</a> for some
+                feedback.</p>
 
-          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+            <p>Tomorrow, it’s go time. In the workshop, I’ll walk you through building your 6-week durability plan so
+                you can finally break the injury cycle and train consistently.</p>
 
-           <p>And I’ll see you tomorrow.</p>
+            <p>Start where you are. Use what you have. Do what you can.</p>
 
-           <p><span class="list-title">Tim</span></p>
+            <p>See you tomorrow,</p>
 
-    </section>
+            <p><span class="list-title">Tim</span></p>
 
-  </main>
+        </section>
+
+    </main>
 
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the collapse element
-        const week1Nav = document.getElementById('week1-nav');
-        // Create a Bootstrap collapse instance
-        const bsCollapse = new bootstrap.Collapse(week1Nav, {
-          toggle: false // Prevent automatic toggling
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the collapse element
+            const week1Nav = document.getElementById('week1-nav');
+            // Create a Bootstrap collapse instance
+            const bsCollapse = new bootstrap.Collapse(week1Nav, {
+                toggle: false // Prevent automatic toggling
+            });
+            // Show the collapse
+            bsCollapse.show();
         });
-        // Show the collapse
-        bsCollapse.show();
-      });
     </script>
 
 

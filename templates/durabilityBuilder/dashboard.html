@@ -1,26 +1,69 @@
 {% extends 'base_dashboard.html' %}
 
-{%  load static %}
+{% load static %}
 
 {% block content %}
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Dashboard</h1>
+        <div class="pagetitle">
+            <h1>Dashboard</h1>
+            {% comment %}
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>
           <li class="breadcrumb-item active">Dashboard</li>
         </ol>
       </nav>
-    </div><!-- End Page Title -->
+{% endcomment %}
+        </div><!-- End Page Title -->
 
-    <section id="temp_dashboard" class="section">
-        <h3>Content you signed up for or purchased will show up in the left sidebar.</h3>
-    </section>
+        <section id="temp_dashboard" class="section workout-section">
+            <div class="mt-5">
+                <div style="padding:40% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/1102045394?h=2b05cc2a26&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                            title="14 Day Durability Kickstart, Day 1"></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
 
-  </main>
+            <div class="section-title">What is the Durability Builder?</div>
+
+            <p>Conversations in endurance sports, more often than not, circle back to the same thing: stiffness,
+                strains, and injuries. I’ve been there, and chances are, you have too.</p>
+
+            <p>That’s why I built the Durability Builder.</p>
+
+            <p>It’s an online multisport training platform designed to take triathletes from <span class="bold-text">injury-prone and frustrated to durable, confident triathletes, through technique, mobility, and smart training that lasts.</span>
+            </p>
+
+            <p>It’s not about stacking endless miles. It’s about pairing your swim, bike, and run with the work that
+                keeps you moving well, recovering faster, and training consistently.</p>
+
+            <p>That’s how you stop breaking down and start breaking through.</p>
+
+            <p>And you won’t be doing it alone. When you start, you’ll also get access to the <span class="bold-text">Durable Triathlete
+                community.</span></p>
+
+            <p>So welcome!</p>
+
+            <p>You’re in the right place to start training like a Durable Triathlete.</p>
+
+            <p>Click on <a href="{% url 'durabilityBuilder:intro_day1' %}">
+                Day 1
+            </a> to begin your 14-Day Durability Kickstart.</p>
+
+            <p>I’ll see you inside.</p>
+
+            <p><span class="list-title">Tim</span></p>
+
+        </section>
+
+    </main>
 
 
 
