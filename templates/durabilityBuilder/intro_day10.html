@@ -1,87 +1,134 @@
 {% extends 'base_dashboard.html' %}
 
-{%  load static %}
+{% load static %}
 
 {% block content %}
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Welcome to Day 10</h1>
-        <hr/>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
-          <li class="breadcrumb-item active">Day 10</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+        <div class="pagetitle">
+            <h1>Welcome to Day 10</h1>
+            <hr/>
+            <nav>
+                <ol class="breadcrumb">
+                    {#          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>#}
+                    <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Day 10</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
 
-    <section id="intro-section" class="section workout-section">
-        <div class="video-wrapper mt-5">
-            <video width="560" height="315" controls>
-                <source src="https://www.dropbox.com/scl/fi/ycoqd6jzjo3gwgt61lskv/14ddkday10edit1.mov?rlkey=am6sjvttg4h5sje42rr31d00l&st=m7cm1bqg&raw=1" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <section id="intro-section" class="section workout-section">
 
-        <div class="section-title">She finished Pain Free!</div>
+            <div style="padding:40% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1102322842?h=aacff7ed29&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="14 Day Durability Kickstart, Day 10"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
 
-            <p>Ever been stuck wondering if the time, effort, and energy you're pouring into training will really pay off?
-                Questioning if it's worth it to keep pushing, given all the setbacks?</p>
+            <div class="section-title">She finished pain-free (and you can too)</div>
 
-            <p>Imagine if the outcome wasn’t just finishing stronger, but transforming how you feel every single day. Over
-                the years, I’ve worked with athletes who wanted more than to simply compete — they wanted confidence and
-                durability that positively impacted every part of their lives.</p>
+            <p>Hey Athletes,</p>
 
-            <p>These athletes didn’t just get faster and fitter; they found freedom from the fear of injury, confidence to
-                train without limits, and even rediscovered their love for the sport.</p>
+            <p>Ever wonder what it would feel like to train without second-guessing every ache or worrying if you’re on
+                the edge of another setback? That’s the real win athletes in this program talk about
+                most—confidence.</p>
 
-            <p>Wouldn’t you want to race with confidence, knowing you’re not risking weeks or months off from overuse
-                pain?</p>
+            <p>Now, let’s address the big question:<br/>Is the 6-Week Durability Builder (or customized monthly
+                coaching) really worth it?</p>
 
-            <p>I’ll be honest — I know the doubt creeps in. Is it really worth the investment? But isn’t the chance to train
-                and compete at your best, without pain, worth it?</p>
+            <p>If you’re already injury-free, moving well, and hitting your goals—awesome. Keep doing what works.</p>
 
-            <p>Recently, I worked with an athlete who felt just like you might — uncertain and held back. She took a leap,
-                committed to a plan that prioritized durability, and now, at 53, she’s pain-free, training and racing
-                stronger and faster than ever.</p>
+            <p>But if you’re stuck in that cycle of training hard, getting hurt, starting over… or if nagging pain keeps
+                stealing your progress, then yes—it’s worth it.</p>
 
-            <p>And that’s why I created the 6-Week Durability Builder Program. To give you that first step back into
-                training without limits, helping you move from pain to confidence.</p>
+            <p>Here’s why:<br/>Having someone review your numbers, provide feedback, and offer an objective point of
+                view takes the second-guessing out of training. Even coaches need coaches. When someone else is guiding
+                the plan, it frees up your mental energy to focus on doing the work—not questioning if you’re doing it
+                right.</p>
+
+            <p>One of my athletes told me her biggest win wasn’t a podium spot. It was waking up pain-free, lacing up
+                her shoes, and actually looking forward to her runs again. That’s what we build in the Durability
+                Builder Programs: confidence, efficiency, and a body that holds up—race after race, season after
+                season.</p>
+
+            <p>Watch today’s video where I reveal the hidden benefits.</p>
+
+            <p>Then, check out today’s mobility and technique drills, do the exercises, and post your results or
+                questions in the Facebook group for feedback.</p>
 
             <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
 
+            <p>Your shoulders might not scream during training, but they’re quietly stealing your swim speed. This
+                shoulder mobilizer fixes that. And the jump rope drill? If done right, it develops all the muscles for a
+                super efficient run form.</p>
+
             <ul>
-                <li><span class="list-title">Daily Mobility</span>: Supine Shoulder opener - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Technique Drill</span>: Jump rope, tight Glutes - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+                <li><span class="list-title">Daily Mobility</span>: Inverted Snow Angel</li>
+                <li>
+                    <div style="padding:40% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102353870?h=4e5e4a4ea2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="Inverted Snow Angel.mp4"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
+                <li><span class="list-title">Technique Drill</span>: Jump Rope (tight glutes)</li>
+                <li>
+                    <div style="padding:60% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102360690?h=b284a3f69c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="jumprope.mp4"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
             </ul>
 
-            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+            <p>Did the drills? Sweet. Share a quick clip or results in the <a
+                    href="https://www.facebook.com/groups/859964805679977" target="_blank">Facebook group</a> for some
+                feedback.</p>
 
-          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+            <p>If you’re ready to take this beyond the 14-Day Kickstart, book a free 15-minute consultation, and we’ll
+                map out your next steps together.</p>
 
-           <p>And I’ll see you tomorrow.</p>
+            <p>Start where you are. Use what you have. Do what you can.</p>
 
-           <p><span class="list-title">Tim</span></p>
+            <p>See you tomorrow,</p>
 
-    </section>
+            <p><span class="list-title">Tim</span></p>
 
-  </main>
+            <p>P.S. Even coaches need coaches. Let’s take the guesswork out of your training—<a
+                    href="https://api.leadconnectorhq.com/widget/booking/FogfFLBrYDZCw6JnmoGy" target="_blank">[schedule
+                your free call here]</a>.</p>
+
+            <p>P.P.S. Tomorrow, I’ll show you how to fit this all into even the busiest schedule without burning
+                out.</p>
+
+        </section>
+
+    </main>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the collapse element
-        const week1Nav = document.getElementById('week2-nav');
-        // Create a Bootstrap collapse instance
-        const bsCollapse = new bootstrap.Collapse(week1Nav, {
-          toggle: false // Prevent automatic toggling
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the collapse element
+            const week1Nav = document.getElementById('week2-nav');
+            // Create a Bootstrap collapse instance
+            const bsCollapse = new bootstrap.Collapse(week1Nav, {
+                toggle: false // Prevent automatic toggling
+            });
+            // Show the collapse
+            bsCollapse.show();
         });
-        // Show the collapse
-        bsCollapse.show();
-      });
     </script>
 
 

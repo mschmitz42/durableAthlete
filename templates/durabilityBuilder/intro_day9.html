@@ -1,87 +1,139 @@
 {% extends 'base_dashboard.html' %}
 
-{%  load static %}
+{% load static %}
 
 {% block content %}
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Welcome to Day 9</h1>
-        <hr/>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
-          <li class="breadcrumb-item active">Day 9</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+        <div class="pagetitle">
+            <h1>Welcome to Day 9</h1>
+            <hr/>
+            <nav>
+                <ol class="breadcrumb">
+                    {#          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>#}
+                    <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Day 9</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
 
-    <section id="intro-section" class="section workout-section">
-        <div class="video-wrapper mt-5">
-            <video width="560" height="315" controls>
-                <source src="https://www.dropbox.com/scl/fi/hb2o9zd0hzptyg1zkjy1f/14ddkday9edit1.mov?rlkey=ynrgg7rx7w8zqrfi4ytu6jzo7&st=56nzkgfr&raw=1" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <section id="intro-section" class="section workout-section">
+            <div style="padding:40% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1102320913?h=9a19cb1182&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="14 Day Durability Kickstart, Day 9"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
 
-        <div class="section-title">You Don’t Lack Motivation (But You Need Something Else)</div>
+            <div class="section-title">You don’t lack motivation (but you need something else)</div>
 
-            <p>Have you ever felt that surge of motivation—convincing yourself that this time it’s different—only for that
-                energy to fizzle out in no time? That’s the motivational trap…</p>
+            <div class="section-title">Preview: Motivation fizzles. Systems and support last.</div>
 
-            <p>Motivation is a bit like an unreliable partner. They show up strong at first but disappear when you need them
-                the most.</p>
+            <p>Hey Athletes,</p>
 
-            <p>Consistency, on the other hand, is your ideal partner—they’re there through every high and low, guiding you
+            <p>Welcome back to Day 9 of the 14-Day Durability Kickstart.</p>
+
+            <p>Have you ever felt that surge of motivation—convincing yourself this time it’s different—only for that
+                energy to fizzle out a few days later? That’s the motivational trap.</p>
+
+            <p>Motivation is like an unreliable partner. Shows up strong at first, then disappears when you need it
+                most.</p>
+
+            <p>Consistency, on the other hand, is your ideal teammate—there through every high and low, guiding you
                 forward.</p>
 
-            <p>What if you didn’t have to rely on fleeting motivation?</p>
+            <p>Truth is, you don’t lack motivation.<br/>You’re missing a consistent system that fits your life and keeps
+                you moving when the excitement fades.</p>
 
-            <p>What if you had a system that kept you on track regardless of how inspired you felt on any given day?</p>
+            <p>Let me give you an example:</p>
 
-            <p>I get asked all the time, “How do you keep improving?” The truth is, I stopped chasing motivation and started
-                building consistency—systems and routines around training that kept me going, regardless of how pumped I
-                felt each day.</p>
+            <p>One athlete I worked with was juggling a high-stress job and chasing big running goals. He downloaded a
+                generic plan that pushed him past his limits—right into a hip stress fracture. Running was how he kept
+                his sanity, and now that was gone.</p>
 
-            <p><span class="list-title">What about you?</span></p>
+            <p>Once we built a smarter plan around his life—and injury—he rebuilt his fitness through swimming, biking,
+                mobility, and strength. And when it was time to run again, he came back stronger, more efficient, and
+                with a bigger engine than ever.</p>
 
-            <p>How many times has motivation left you hanging? Would it be different if you had a reliable program designed
-                to stick with you through thick and thin?</p>
+            <p>It wasn’t about being more motivated. It was about having a plan that made progress inevitable.</p>
+
+            <p>That’s what the 6-Week Durability Builder is about:</p>
+
+            <ul>
+                <li>A flexible system
+                </li>
+                <li>Personalized support
+                </li>
+                <li>A smart structure that adjusts to your life
+                </li>
+            </ul>
+
+            <p>Not sure if it’s right for you?</p>
+
+            <p>Let’s talk. Book a free 15-minute consultation and I’ll help map out your next step:<br/><a
+                    href="https://api.leadconnectorhq.com/widget/booking/FogfFLBrYDZCw6JnmoGy" target="_blank">[Schedule
+                a free call]</a></p>
 
             <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
 
+            <p>Hips get cranky fast, and the lacrosse ball unlocks hidden tension that’s killing your efficiency. And
+                does your swim kick suck? Learning to kick from the hips will help you glide through the water more like
+                a spear and less like a water noodle.</p>
+
             <ul>
-                <li><span class="list-title">Daily Mobility</span>: Lacrosse Ball Under Hips - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Technique Drill</span>: Swim – Vertical Kick - Katie - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+                <li><span class="list-title">Daily Mobility</span>: Lacrosse Ball Under Hips</li>
+                <li>
+                    <div class="video-wrapper mt-5">
+                        <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/CxF4b4qZHso?si=VYZR2XSbTVKlftKJ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </li>
+                <li><span class="list-title">Technique Drill</span>: Swim – Vertical Kick - Katie</li>
+                <li>
+                    <div style="padding:40% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102360498?h=317e2c2dd2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="kickfromthehips.mp4"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
             </ul>
 
-            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+            <p>Your turn—post your lacrosse ball routine or swim kick attempt in the <a
+                    href="https://www.facebook.com/groups/859964805679977" target="_blank">Facebook group</a> for some eyes-on feedback.</p>
 
-          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+            <p>Start where you are. Use what you have. Do what you can.</p>
 
-           <p>And I’ll see you tomorrow.</p>
+            <p>See you tomorrow,</p>
 
-           <p><span class="list-title">Tim</span></p>
+            <p><span class="list-title">Tim</span></p>
 
-    </section>
+        </section>
 
-  </main>
+    </main>
 
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the collapse element
-        const week1Nav = document.getElementById('week2-nav');
-        // Create a Bootstrap collapse instance
-        const bsCollapse = new bootstrap.Collapse(week1Nav, {
-          toggle: false // Prevent automatic toggling
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the collapse element
+            const week1Nav = document.getElementById('week2-nav');
+            // Create a Bootstrap collapse instance
+            const bsCollapse = new bootstrap.Collapse(week1Nav, {
+                toggle: false // Prevent automatic toggling
+            });
+            // Show the collapse
+            bsCollapse.show();
         });
-        // Show the collapse
-        bsCollapse.show();
-      });
     </script>
 
 

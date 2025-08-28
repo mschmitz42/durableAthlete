@@ -1,94 +1,130 @@
 {% extends 'base_dashboard.html' %}
 
-{%  load static %}
+{% load static %}
 
 {% block content %}
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Welcome to Day 7</h1>
-        <hr/>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
-          <li class="breadcrumb-item active">Day 7</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+        <div class="pagetitle">
+            <h1>Welcome to Day 7</h1>
+            <hr/>
+            <nav>
+                <ol class="breadcrumb">
+                    {#          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>#}
+                    <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Day 7</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
 
-    <section id="intro-section" class="section workout-section">
-        <div class="video-wrapper mt-5">
-            <video width="560" height="315" controls>
-                <source src="https://www.dropbox.com/scl/fi/y7jxq858n6mev2or4aibe/14ddkday7edit1.mov?rlkey=n2k22nnu4pj55ppyg7k46x4ph&st=mtugp9e2&raw=1" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <section id="intro-section" class="section workout-section">
+            <div style="padding:40% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1102313903?h=50521f752e&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="14 Day Durability Kickstart, Day 7"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
 
-        <div class="section-title">Results Are Sexy, But Getting There?</div>
+            <div class="section-title">Halfway There—Are You Doing the Right Work?</div>
+
+            <p>Hey Athletes,</p>
 
 
-            <p>Day 7, Halfway already! That came quick.</p>
+            <p>Day 7 already—halfway through the 14-Day Durability Kickstart. By now, you’ve probably uncovered
+                challenges you didn’t even know you had. Maybe a tight squat, low run cadence, or realizing just how
+                much mobility and technique matter.</p>
 
-            <p>Let’s be real: results are sexy. Everyone loves the idea of a PR, crossing the finish line strong, or hitting
-                a new milestone. But the work it takes to get there? That’s a different story. It’s messy, it’s gritty, and
-                life has a way of getting in the way.</p>
+            <p>Here’s the truth: most triathletes skip this stuff, and it’s costing them. You can keep piling on miles
+                or grinding through hard sessions, but if you’re training with poor form and limited mobility, you’re
+                only reinforcing bad habits—or worse, setting yourself up for injury.</p>
 
-            <p>I get it. I’ve been there myself. But here’s the thing: if you keep doing what you’ve been doing, you’re
-                gonna keep getting what you got. It’s easy to set a big, shiny goal—and then watch excuse after excuse creep
-                in. Suddenly, you’re not doing the work, and the results you dreamed of feel further away.</p>
+            <p>That’s why this program isn’t about just handing you a plan. It’s about showing you what to focus on, why
+                it matters, and how to actually improve. Because if you keep doing what you’ve been doing, you’re going
+                to keep getting what you’ve got.</p>
 
-            <p>If your dream is to conquer something monumental—an Ironman, a PR, or even a comeback 5K—you’ll get there.
-                But it’s a progression, and there are no shortcuts. I designed this program to give you a roadmap that makes
-                sense for your life, so you’re not just checking off workouts—you’re building a stronger, more durable
-                athlete out of yourself, one step at a time.</p>
+            <p>Think about it: testing on Day 1 showed you where you were starting from. Training this week addressed
+                those weaknesses. Today, we retest so you can see what’s changed—and what still needs work. That’s how
+                lasting progress is built: test, train, retest, adjust, repeat.</p>
 
-            <p>We don’t just tell you what to do; we show you how to do it, and more importantly, why each step matters.
-                This isn’t “just go faster”—it’s about training smarter, finding joy in the work, and building yourself up
-                in a way that lasts.</p>
+            <p>This is what separates durable athletes from those stuck in the injury-recovery loop. Durability isn’t
+                about working harder—it’s about training smarter, stacking wins, and showing up stronger, race after
+                race.</p>
 
-            <p>So here’s the challenge: Stop torturing yourself by putting off your goals or feeling like they’re just out
-                of reach. You deserve to be happy and fulfilled in this journey, every step of the way.</p>
-
-            <p>This program is here to back you up. You’re stronger than you think—and the results? They’re just waiting for
-                you to start.</p>
-
-            <p>It’s never too late to build a life you’re proud of, one that’s filled with adventure, challenge, and moments
-                that make it all worth it. So… what are you waiting for?</p>
 
             <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
 
+            <p>Time to check your homework. The squat retest shows how much range of motion you’ve gained, and the “Next
+                Level” run cadence retest brings it all together to see if your stride has leveled up.</p>
+
             <ul>
-                <li><span class="list-title">Daily Mobility</span>: Retest Squat Assessment - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Technique Drill</span>: Revisit running at a cadence of 90 or 180 spm - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+                <li><span class="list-title">Daily Mobility</span>: Retest Squat Assessment</li>
+                <li>
+                    <div style="padding:60% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102350460?h=756dda4967&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="Squat test.mp4"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
+                <li><span class="list-title">Technique Drill</span>: Revisit running at a cadence of 90 or 180 spm</li>
+                <li>
+                    <div style="padding:40% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1102360237?h=d9ad8e6e08&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="Run cadence14ddk day7.mov"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </li>
             </ul>
 
-            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+            <p>Halfway checkpoint—share your retest results in the <a
+                    href="https://www.facebook.com/groups/859964805679977" target="_blank">Facebook group</a> so we can
+                measure how far you’ve come. </p>
 
-          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+            <p>This is exactly how we turn these small daily wins into big results.</p>
 
-           <p>And I’ll see you tomorrow.</p>
+            <p>Next up: the hard lesson I learned the slow way, so you don’t have to. If you’ve been trying to piece
+                this together on your own, this one’s for you.</p>
 
-           <p><span class="list-title">Tim</span></p>
+            <p>Start where you are. Use what you have. Do what you can.</p>
 
-    </section>
+            <p>See you tomorrow,</p>
 
-  </main>
+            <p><span class="list-title">Tim</span></p>
+
+            <p>P.S. Ready to build on what you’ve started? Get the 6-Week Durability Builder for just $118—half off for
+                14-Day Kickstart participants.</p>
+
+            <p>[Book your free 15-minute consultation call <a
+                    href="https://api.leadconnectorhq.com/widget/booking/FogfFLBrYDZCw6JnmoGy" target="_blank">here</a>.]
+            </p>
+
+        </section>
+
+    </main>
 
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the collapse element
-        const week1Nav = document.getElementById('week1-nav');
-        // Create a Bootstrap collapse instance
-        const bsCollapse = new bootstrap.Collapse(week1Nav, {
-          toggle: false // Prevent automatic toggling
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the collapse element
+            const week1Nav = document.getElementById('week1-nav');
+            // Create a Bootstrap collapse instance
+            const bsCollapse = new bootstrap.Collapse(week1Nav, {
+                toggle: false // Prevent automatic toggling
+            });
+            // Show the collapse
+            bsCollapse.show();
         });
-        // Show the collapse
-        bsCollapse.show();
-      });
     </script>
 
 

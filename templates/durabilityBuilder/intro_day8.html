@@ -1,97 +1,93 @@
 {% extends 'base_dashboard.html' %}
 
-{%  load static %}
+{% load static %}
 
 {% block content %}
 
-  <main id="main" class="main">
+    <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Welcome to Day 8</h1>
-        <hr/>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>
-          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
-          <li class="breadcrumb-item active">Day 8</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+        <div class="pagetitle">
+            <h1>Welcome to Day 8</h1>
+            <hr/>
+            <nav>
+                <ol class="breadcrumb">
+                    {#          <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:home' %}">Home</a></li>#}
+                    <li class="breadcrumb-item"><a href="{% url 'durabilityBuilder:dashboard' %}">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Day 8</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
 
-    <section id="intro-section" class="section workout-section">
-        <div class="video-wrapper mt-5">
-            <video width="560" height="315" controls>
-                <source src="https://www.dropbox.com/scl/fi/0wkxshoh4wvfvc2rd2oli/14ddkday8edit1.mov?rlkey=6q073kcfd4cw7sdcxg3y18j3m&st=p3vl6yla&raw=1" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <section id="intro-section" class="section workout-section">
+            <div style="padding:40% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1102318825?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                        title="14 Day Durability Kickstart, Day 8"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <div class="section-title">My biggest regret (don’t make the same mistake)</div>
 
-        <div class="section-title">My biggest regret (don’t make the same mistake)</div>
+            <p>Hey Athletes,</p>
 
-            <p>As a triathlete and a coach, I’ve been where you are. Battling those relentless overuse injuries and sifting
-                through heaps of conflicting information was a journey in itself. And I can tell you – nothing’s more
-                frustrating than going in circles.</p>
+            <p>Today I want to talk about a mistake I made that cost me years of progress, and I hope I can help you avoid it.</p>
 
-            <p>You know the routine: try this advice, then that one. But nothing seemed to work quite right or cover all the
-                bases. I eventually realized, if I was going to get out of pain and back to peak performance, I needed a
-                deeper understanding of the human body and what truly works for athletes like us.</p>
+            <p>For years, I battled chronic injuries and pain. I jumped from one so-called “hack” to the next, thinking I was doing all the right things. But nothing worked. I was stuck in the same loop: train hard, get hurt, recover, repeat.</p>
 
-            <p>So, I did just that. I went back to school, dug into human physiology, earned certifications, and devoted
-                years to building a better approach. But even after all that, I still hadn’t found a program that checked
-                all the boxes.</p>
+            <p>You know the routine: try this advice, then that one. But nothing ever seemed to cover all the bases. If I was going to get out of pain and back to peak performance, I needed a deeper understanding of the human body and what truly works for athletes like us.</p>
+
+            <p>So, I went all in. I went back to school, studied human physiology, earned certifications, and devoted years to trial, error, and study. And even then, I still hadn’t found a program that checked all the boxes.</p>
 
             <p>That’s why I created one myself.</p>
 
-            <p>My Durability Builder program isn’t just a random collection of exercises – it’s the result of years of
-                study, hard lessons, and a whole lot of time spent figuring out exactly what gets real results for
-                triathletes. And it’s specifically for athletes like you, who want to get out of pain, stay strong, and go
-                faster.</p>
+            <p>The Durability Builder isn’t just a random collection of workouts—it’s the result of years of hard lessons, study, and figuring out exactly what gets lasting results for triathletes. It’s designed to help you move better, stay injury-free, and finally build the foundation you need to perform at your best.</p>
 
-            <p>Imagine having a program that’s built with your exact needs in mind, tailored to prevent injuries, and
-                improve performance in a way that actually lasts. You can skip the endless trial-and-error and start making
-                measurable progress, right from Day 1.</p>
-
-            <p>There are two ways to pay: time or money. I learned this the hard way. If I could change one thing, it would
-                be investing in the right solution sooner. The question isn’t just how to reach your goals—it’s who will
-                guide you. I’ve spent years uncovering the answers, and now, I’m here to show you exactly how to get there,
-                faster, healthier, and without the guesswork.</p>
-
-            <p>Years ago, I made the choice to commit fully to my own training, and it transformed everything. Now, I’m
-                offering that same support to you. Because the quickest path back to your best self is having the right
-                guide at your side.</p>
+            <p>Imagine skipping years of trial-and-error and jumping straight into a proven system—one that integrates mobility, technique, strength, and endurance into a plan built for athletes like you. That’s what the 6-Week Durability Builder does.</p>
 
             <div class="section-subtitle">Today’s Mobility and Technique Challenge:</div>
 
+            <p>This hamstring stretch isn’t about touching your toes—it’s about unlocking power you’ve been leaving on the table. Combine it with today’s bike drill, and rolling to hilly courses won’t sap your energy anymore.</p>
+
             <ul>
-                <li><span class="list-title">Daily Mobility</span>: Hammy stretch, on your back with a band - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Technique Drill</span>: Bike, Flatten out a rolling course+ABP(always be pedaling) - <a href="#">[Watch it here]</a></li>
-                <li><span class="list-title">Get today’s exercise PDF</span> - <a href="#">[Download here]</a></li>
+                <li><span class="list-title">Daily Mobility</span>: Hammy stretch, on your back with a band</li>
+                <li><div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1102353667?h=bb9c777df6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Hammy stretch on back w Band .mov"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></li>
+                <li><span class="list-title">Technique Drill</span>: Bike, Flatten out a rolling course+ABP(always be pedaling)</li>
+                <li><div style="padding:40% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1102360369?h=00d5500e24&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Standing power repeats on bike.mov"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script></li>
             </ul>
 
-            <p>Got questions? Ask away in the Facebook group—I’m here to help!</p>
+            <p><span class="list-title">Prove it:</span> drop your hamstring stretch effort, bike drill or any questions in the <a
+                    href="https://www.facebook.com/groups/859964805679977" target="_blank">Facebook group</a> for feedback.</p>
 
-          <p>Remember to Start where you are. Use what you have. Do what you can.</p>
+            <p>If you haven’t yet, grab your spot in the 6-Week Durability Builder for just $118 (50% off). Don’t waste years trying to piece this together like I did—get the system that works.</p>
 
-           <p>And I’ll see you tomorrow.</p>
+            <p><a href="mailto:Tim@MultisportEnduranceAcademy.com">Email me at Tim@MultisportEnduranceAcademy.com</a> to get started today.</p>
 
-           <p><span class="list-title">Tim</span></p>
+             <p>Start where you are. Use what you have. Do what you can.</p>
 
-    </section>
+            <p>See you tomorrow,</p>
 
-  </main>
+            <p><span class="list-title">Tim</span></p>
+
+            <p>P.S. Tomorrow, we’ll tackle why motivation fades and how to keep going when the initial spark wears off.</p>
+
+        </section>
+
+    </main>
 
 
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        // Get the collapse element
-        const week1Nav = document.getElementById('week2-nav');
-        // Create a Bootstrap collapse instance
-        const bsCollapse = new bootstrap.Collapse(week1Nav, {
-          toggle: false // Prevent automatic toggling
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the collapse element
+            const week1Nav = document.getElementById('week2-nav');
+            // Create a Bootstrap collapse instance
+            const bsCollapse = new bootstrap.Collapse(week1Nav, {
+                toggle: false // Prevent automatic toggling
+            });
+            // Show the collapse
+            bsCollapse.show();
         });
-        // Show the collapse
-        bsCollapse.show();
-      });
     </script>
 
 
